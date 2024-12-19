@@ -1,0 +1,14 @@
+
+@font-face {
+    font-family: 'testSöhneSchmal';
+    src: url('../public/assets/font/TestSöhneSchmal-Dreiviertelfett.otf') format('truetype');
+}
+@font-face {
+    font-family: 'maisonNeue';
+    src: url('../public/assets/font/MaisonNeue-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+body {
+    font-family: 'Maison Neue', sans-serif;
+}
