@@ -9,7 +9,7 @@ const Hero = () => {
             <Header />
             <div className="container">
                 <div className='max-w-[822px] mx-auto'>
-                    <h1 className='sm:pt-[79px] pt-[43px] sm:text-custom-9xl font-testSöhneSchmal max-xl:text-custom-8xl sm:leading-custom-9xl uppercase text-white max-w-[822px] mx-auto text-center text-6xl'>Make marketing
+                    <h1 className='sm:pt-[79px] pt-[43px] sm:text-custom-9xl font-testSöhneSchmal max-xl:text-custom-8xl sm:leading-custom-9xl uppercase text-white max-w-[822px] mx-auto text-center text-6xl leading-custom-lg'>Make marketing
                         <span className='block'></span>a growth machine</h1>
                     <img className='ml-[250px] max-2xl:ml-[200px] max-sm:max-w-[146px] max-sm:ml-10' src="/assets/images/svg/green-line.svg" alt="line" />
                 </div>

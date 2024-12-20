@@ -37,6 +37,7 @@ module.exports = {
       lineHeight: {
         'custom-sm': "7.97px",
         'custom-md': "30px",
+        'custom-lg': "52px",
         'custom-9xl': "104px",
       },
 

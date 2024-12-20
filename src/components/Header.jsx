@@ -6,7 +6,7 @@ import { NAV_ITEMS_LIST } from '../utils/helper';
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState(null);
-    const dropdownRef = useRef(null);
+    const dropdownRefs = useRef([]);
 
     const toggleMenu = () => {
         setIsMenuOpen((prevState) => !prevState);
@@ -17,7 +17,10 @@ const Header = () => {
     };
 
     const handleClickOutside = (event) => {
-        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        const isClickInsideDropdown = dropdownRefs.current.some(
+            (ref) => ref && ref.contains(event.target)
+        );
+        if (!isClickInsideDropdown) {
             setActiveDropdown(null);
         }
     };
@@ -46,7 +49,11 @@ const Header = () => {
             <div className="2xl:container max-lg:container">
                 <div className="flex justify-between items-center h-20 max-sm:h-[88px]">
                     <a href="/">
-                        <img className="sm:max-w-[59.6px] lg:h-[90px] max-w-[42.38px] h-[64px] mt-4 sm:mt-[42px]" src="/assets/images/webp/nav-logo.webp" alt="nav-logo" />
+                        <img
+                            className="sm:max-w-[59.6px] lg:h-[90px] max-w-[42.38px] h-[64px] mt-4 sm:mt-[42px]"
+                            src="/assets/images/webp/nav-logo.webp"
+                            alt="nav-logo"
+                        />
                     </a>
                     <div
                         className={`menuList ${isMenuOpen ? 'max-lg:left-0' : 'max-lg:left-[-100%]'
@@ -55,11 +62,15 @@ const Header = () => {
                         <div className="lg:flex-row flex flex-col">
                             <div className="lg:max-w-[800px] w-full lg:flex-row flex flex-col lg:bg-white lg:pr-[29.5px] lg:ps-[41.79px] lg:h-[80px] items-center max-lg:gap-6 lg:gap-[42px]">
                                 {NAV_ITEMS_LIST.map((item, index) => (
-                                    <div key={index} className="relative group" ref={dropdownRef}>
+                                    <div
+                                        key={index}
+                                        className="relative group"
+                                        ref={(el) => (dropdownRefs.current[index] = el)}
+                                    >
                                         <a
                                             href="#"
                                             onClick={(e) => {
-                                                e.preventDefault(); 
+                                                e.preventDefault();
                                                 toggleDropdown(index);
                                             }}
                                             className="flex font-medium items-center gap-1 text-custom-md leading-5 hover:text-dark-green transition-all duration-700"
