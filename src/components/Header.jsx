@@ -46,7 +46,7 @@ const Header = () => {
 
     return (
         <div className="lg:ms-[56px]">
-            <div className="2xl:container max-lg:container">
+            <div className="max-lg:container max-w-[1920px] mx-auto">
                 <div className="flex justify-between items-center h-20 max-sm:h-[88px]">
                     <a href="/">
                         <img

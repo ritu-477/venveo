@@ -11,7 +11,7 @@ const Hero = () => {
                 <div className='max-w-[822px] mx-auto'>
                     <h1 className='sm:pt-[79px] pt-[43px] sm:text-custom-9xl font-testSöhneSchmal max-xl:text-custom-8xl sm:leading-custom-9xl uppercase text-white max-w-[822px] mx-auto text-center text-6xl leading-custom-lg'>Make marketing
                         <span className='block'></span>a growth machine</h1>
-                    <img className='ml-[250px] max-2xl:ml-[160px] max-sm:max-w-[146px] max-sm:ml-10' src="/assets/images/svg/green-line.svg" alt="line" />
+                    <img className='ml-[164px] max-2xl:ml-[160px] max-sm:max-w-[146px] max-sm:ml-10' src="/assets/images/svg/green-line.svg" alt="line" />
                 </div>
                 <Description classStyle={'pt-3 sm:max-w-[656px] max-w-[319px] mx-auto font-light'} text={'We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.'} />
                     <form action="" className="border-2 border-white mt-[30px] rounded-[50px] text-center py-4 sm:py-5 px-7 flex max-w-[448px] sm:mx-auto justify-between">
