@@ -28,9 +28,9 @@ const Hero = () => {
                             Analyze
                         </button>
                     </form>
-                <img className='pt-[66px] sm:block hidden max-w-[924px] mx-auto w-full pb-12' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
+                <img className='pt-[66px] pointer-events-none sm:block hidden max-w-[924px] mx-auto w-full pb-12' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
                 <div className='sm:hidden block py-12'>
-                    <img className='max-w-[328px] w-full ' src="/assets/images/webp/hero-mobile.webp" alt="hero-mobile" />
+                    <img className='max-w-[328px] w-full pointer-events-none' src="/assets/images/webp/hero-mobile.webp" alt="hero-mobile" />
                 </div>
             </div>
         </div>
