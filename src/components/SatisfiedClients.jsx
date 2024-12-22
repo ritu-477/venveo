@@ -11,7 +11,7 @@ const SatisfiedClients = () => {
   return (
     <div className="lg:pt-[51px] md:pt-10 sm:pt-8 pt-[18px] lg:pb-[66px] md:pb-12 pb-8">
       <div className="max-w-[1920px] mx-auto">
-        <div className="max-w-[556px] mx-auto">
+        <div className="max-w-[586px] mx-auto">
           <p className="font-light sm:text-3xl sm:leading-custom-6xl text-2xl leading-custom-5xl text-center font-maisonLight pb-[7px]">
             Driving digital revenue for over
           </p>
