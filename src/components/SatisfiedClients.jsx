@@ -40,7 +40,7 @@ const SatisfiedClients = () => {
                     <img
                       src={card.logo}
                       alt="logo"
-                      className={`${index === 0 ? 'max-w-[131px]' : index === SATISFIED_CLIENT_LIST.length - 1 ? 'max-w-[49px] pt-0' : 'max-w-[149.73px] pt-5'}`}
+                      className={`${index === 0 ? 'max-w-[131px] pt-5' : index === SATISFIED_CLIENT_LIST.length - 1 ? 'max-w-[49px] pt-0' : 'max-w-[149.73px] pt-5'}`}
                     />
                   </a>
 
