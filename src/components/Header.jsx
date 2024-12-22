@@ -73,7 +73,7 @@ const Header = () => {
                                                 e.preventDefault();
                                                 toggleDropdown(index);
                                             }}
-                                            className="flex font-medium items-center gap-1 text-custom-md leading-5 hover:text-dark-green transition-all duration-700"
+                                            className="flex font-medium items-center gap-1 text-custom-lg leading-5 hover:text-dark-green transition-all duration-700"
                                         >
                                             {item.list}
                                             <span

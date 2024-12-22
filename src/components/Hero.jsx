@@ -9,28 +9,28 @@ const Hero = () => {
             <Header />
             <div className="container">
                 <div className='max-w-[822px] mx-auto'>
-                    <h1 className='sm:pt-[79px] pt-[43px] sm:text-custom-9xl font-testSöhneSchmal max-xl:text-custom-8xl sm:leading-custom-9xl uppercase text-white max-w-[822px] mx-auto text-center text-6xl leading-custom-lg'>Make marketing
+                    <h1 className='sm:pt-[79px] pt-[43px] sm:text-custom-5xl font-testSöhneSchmal sm:leading-custom-11xl uppercase text-white max-w-[822px] mx-auto text-center text-6xl leading-custom-9xl'>Make marketing
                         <span className='block'></span>a growth machine</h1>
                     <img className='ml-[164px] max-2xl:ml-[160px] max-sm:max-w-[146px] max-sm:ml-10' src="/assets/images/svg/green-line.svg" alt="line" />
                 </div>
-                <Description classStyle={'pt-3 sm:max-w-[656px] max-w-[319px] mx-auto font-light'} text={'We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.'} />
+                <Description classStyle={'pt-3 text-white sm:max-w-[656px] max-w-[319px] mx-auto font-light text-center sm:text-2xl text-custom-xl leading-7 sm:leading-custom-7xl'} text={'We focus on results. Not just chatter. Elevate your business with our top-tier services and tech. Get a proposal now.'} />
                     <form action="" className="border-2 border-white mt-[30px] rounded-[50px] text-center py-4 sm:py-5 px-7 flex max-w-[448px] sm:mx-auto justify-between">
                         <input
                             id="email"
                             type="text"
                             placeholder="Enter Your Website"
-                            className="bg-transparent outline-none flex-grow placeholder:text-light-gray text-light-gray"
+                            className="bg-transparent outline-none font-maisonLight text-custom-lg leading-5 flex-grow placeholder:text-light-gray text-light-gray"
                         aria-label="Enter your website"
                         required
                         />
                         <button
-                            className="text-white text-custom-md leading-5 font-semibold text-center">
+                            className="text-white text-custom-lg leading-5 font-semibold text-center">
                             Analyze
                         </button>
                     </form>
                 <img className='pt-[66px] pointer-events-none sm:block hidden max-w-[924px] mx-auto w-full pb-12' src="/assets/images/webp/hero-image.webp" alt="hero-image" />
                 <div className='sm:hidden block py-12'>
-                    <img className='max-w-[328px] w-full pointer-events-none' src="/assets/images/webp/hero-mobile.webp" alt="hero-mobile" />
+                    <img className='max-w-[328px] mx-auto w-full pointer-events-none' src="/assets/images/webp/hero-mobile.webp" alt="hero-mobile" />
                 </div>
             </div>
         </div>
