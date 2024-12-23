@@ -1,30 +1,3 @@
-    // import React from 'react';
-    // import { FEATURED_LIST } from '../utils/helper';
-
-    // const Featured = () => {
-    //     return (
-    //         <div className="lg:pt-10 sm:pt-8 pt-6 lg:pb-[50px] sm:pb-12 pb-6">
-    //             <div className="container max-w-[1200px] mx-auto">
-    //                 <p className="text-center text-custom-lg leading-custom-lg">Featured in</p>
-    //                 <div className="max-w-[1025.2px] mx-auto">
-    //                     <div className="flex justify-between items-center">
-    //                         {FEATURED_LIST.map((item, index) => (
-    //                             <img
-    //                                 key={index}
-    //                                 src={item.src}
-    //                                 alt={item.alt}
-    //                                 className={item.maxWidth}
-    //                             />
-    //                         ))}
-    //                     </div>
-    //                 </div>
-    //             </div>
-    //         </div>
-    //     );
-    // };
-
-    // export default Featured;
-
 import React, { useEffect, useRef } from 'react';
 import { FEATURED_LIST } from '../utils/helper';
 

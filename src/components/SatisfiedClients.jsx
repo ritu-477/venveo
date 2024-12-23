@@ -48,13 +48,13 @@ const SatisfiedClients = () => {
                     {card.description}
                   </p>
                   <p className="text-custom-lg leading-5 font-normal font-maisonMono pt-6">{card.details}</p>
-                  <a
+                  <button
                     className="font-semibold text-custom-lg leading-5 max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group"
-                    href="/"
+                    
                   >
                     Learn More{' '}
                     <Icon classStyle={'group-hover:translate-x-1 transition-all duration-500'} iconName={'arrowIcon'} />
-                  </a>
+                  </button>
                 </div>
                 <div className="flex gap-[46px] md:gap-[62px] pt-[13px]">
                   {card.stats.map((stat, i) => (
@@ -105,13 +105,12 @@ const SatisfiedClients = () => {
                       {card.description}
                     </p>
                     <p className="text-custom-lg leading-5 font-normal font-maisonMono pt-6">{card.details}</p>
-                    <a
+                    <button
                       className="font-semibold text-custom-lg leading-5 max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group"
-                      href="/"
                     >
                       Learn More{' '}
                       <Icon classStyle={'group-hover:translate-x-1 transition-all duration-500'} iconName={'arrowIcon'} />
-                    </a>
+                    </button>
                   </div>
                   <div className="flex gap-[46px] pt-[13px]">
                     {card.stats.map((stat, i) => (

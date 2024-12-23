@@ -52,6 +52,7 @@ export const SATISFIED_CLIENT_LIST = [
             { value: '520%', label: 'Web Traffic' },
         ],
     },
+
     {
         bgClass: 'bg-green-card',
         title: 'HVAC Marketing',
@@ -64,6 +65,7 @@ export const SATISFIED_CLIENT_LIST = [
             { value: '520%', label: 'Web Traffic' },
         ],
     },
+    
     {
         bgClass: 'bg-yellow-card',
         title: '',
@@ -77,3 +79,53 @@ export const SATISFIED_CLIENT_LIST = [
         ],
     },
 ]
+
+export const DIGITAL_MARKETING_LIST = [
+    {
+        iconName: 'myWebsite',
+        title: "My website isn’t getting enough traffic",
+        description: "Without consistent site traffic, you’re missing out on valuable visitors, leads, and revenue. Thankfully, custom SEO solutions can get you back on track by boosting your presence in search engine results, so more people can find and visit your site.",
+        points: [
+            "Boost your presence in search results",
+            "Capture targeted site traffic",
+            "Turn site visitors into customers",
+        ],
+        buttonText: "Explore SEO Services",
+    },
+
+    {
+        iconName: 'myCpl',
+        title: "My CPL from digital ad campaigns is too high",
+        description: "Without consistent site traffic, you’re missing out on valuable visitors, leads, and revenue. Thankfully, custom SEO solutions can get you back on track by boosting your presence in search engine results, so more people can find and visit your site.",
+        points: [
+            "Refine ad targeting",
+            "Engage your audience where they browse online",
+            "Maximize paid ad budget",
+        ],
+        buttonText: "Explore SEO Services",
+    },
+
+    {
+        iconName: 'myWebsiteLeads',
+        title: "My website isn’t generating enough leads",
+        description: "Struggling to get qualified leads in your pipeline? Turn up the dial on your lead generation with digital marketing plans, tailored to your goals and budget.",
+        points: [
+            "Fill up your lead pipeline",
+            "Capture targeted site traffic",
+            "Maximize conversion opportunities",
+        ],
+        buttonText: "Explore SEO Services",
+    },
+
+    {
+        iconName: 'myMarketing',
+        title: "My marketing and sales data is disconnected",
+        description: "Don’t let leads slip through the cracks. Unify your sales and marketing efforts with Nutshell and MarketingCloudFX, to provide end-to-end reporting and analysis of your data.",
+        points: [
+            "Unify sales and marketing data",
+            "Prioritize leads with data-backed insights",
+            "Turn opportunities into closed deals",
+        ],
+        buttonText: "Explore SEO Services",
+    },
+];

@@ -30,6 +30,7 @@ module.exports = {
         'light-gray': "#9DC9CC",
         'dark-green': "#097980",
         'light-green': "#0D99A0",
+        'aqua-green':"#00AFB5"
       },
 
       fontSize: {
@@ -44,6 +45,7 @@ module.exports = {
       },
 
       lineHeight: {
+        'custom-xs': "6px",
         'custom-sm': "7.97px",
         'custom-md': "13px",
         'custom-lg': "15px",
