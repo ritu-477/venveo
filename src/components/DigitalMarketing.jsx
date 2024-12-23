@@ -9,7 +9,7 @@ const DigitalMarketing = () => {
   return (
     <div className="lg:py-[66px] md:py-12 py-6 relative">
       <img className='absolute sm:block hidden sm:top-[17%] xl:top-[29%] w-full z-[-1]' src="/assets/images/svg/yellow-line.svg" alt="yellow-line" />
-      <img src="/assets/images/svg/mobile-yellow-line.svg" className='w-full absolute top-[32%]' alt="yellow-line" />
+      <img src="/assets/images/svg/mobile-yellow-line.svg" className='w-full absolute top-[32%] sm:hidden block' alt="yellow-line" />
       <div className="container">
           <p className="font-light sm:text-3xl sm:leading-custom-6xl text-2xl leading-custom-5xl text-center font-maisonLight pb-[3px]">
             Problems we solve.
