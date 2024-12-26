@@ -18,19 +18,22 @@ module.exports = {
 
       fontFamily: {
         'testSöhneSchmal': "'testSöhneSchmal', sans-serif",
+        'space': "'space mono', sans-serif",
         'MaisonNeue': "'Maison Neue',sans-serif",
         'maisonLight': "'MaisonNeueLight',sans-serif",
         'maisonMedium': "'MaisonNeueMedium',sans-serif",
         'maisonDemi': "'MaisonNeueDemi',sans-serif",
         'maisonMono': "'MaisonNeueMono',sans-serif",
-              },
+
+      },
 
       colors: {
         'green': "#D2F038",
         'light-gray': "#9DC9CC",
         'dark-green': "#097980",
         'light-green': "#0D99A0",
-        'aqua-green':"#00AFB5"
+        'aqua-green': "#00AFB5",
+        'light-black': "#a6a6a6",
       },
 
       fontSize: {
@@ -67,6 +70,13 @@ module.exports = {
         'blue-card': "url('/public/assets/images/webp/bg-blue-card.webp')",
         'green-card': "url('/public/assets/images/webp/bg-green-card.webp')",
         'yellow-card': "url('/public/assets/images/webp/bg-yellow-card.webp')",
+        'outsmart': "url('/public/assets/images/webp/outsmart-bg.webp')",
+        'tab-one': "url('/public/assets/images/webp/tab-one-bg.webp')",
+        'tab-two': "url('/public/assets/images/webp/tab-two-bg.webp')",
+        'tab-three': "url('/public/assets/images/webp/tab-three-bg.webp')",
+        'actual': "url('/public/assets/images/webp/actual-bg.webp')",
+        'mobile-tab-two': "url('/public/assets/images/webp/mobile-bg-tab-two.webp')",
+        'mobile-tab-three': "url('/public/assets/images/webp/mobile-tab-three-bg.webp')",
       },
 
     },

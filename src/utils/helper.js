@@ -129,3 +129,47 @@ export const DIGITAL_MARKETING_LIST = [
         buttonText: "Explore SEO Services",
     },
 ];
+
+export const TABS_DATA = [
+    { id: "industry", label: "Industry Expertise" },
+    { id: "roi", label: "ROI Focused" },
+    { id: "proprietary", label: "Proprietary Technology" },
+];
+
+export const ACTUAL_RESULTS = [
+    
+
+    {
+        description: "Venveo helped us achieve growth beyond expectations with an excellent brand strategy.",
+        name: "Sarah Johnson",
+        title: "Marketing Director at BuildPro",
+        companyLogo: "/assets/images/webp/us-logo.webp",
+        videoThumbnail: "/assets/images/webp/men-two-image.webp",
+    },
+
+    {
+        description: "They are really aligned with how we are building the business from a strategic standpoint and from branding, messaging, and cultural standpoint.",
+        name: "Jon Vaughan",
+        title: "Regional VP-SE at US LBM",
+        companyLogo: "/assets/images/webp/us-logo.webp",
+        videoThumbnail: "/assets/images/webp/men-image.webp",
+    },
+
+    {
+        description: "Their innovative ideas and flawless execution drove our success to new heights.",
+        name: "Michael Lee",
+        title: "CEO at Constructive Works",
+        companyLogo: "/assets/images/webp/us-logo.webp",
+        videoThumbnail: "/assets/images/webp/men-three-image.webp",
+    },
+
+    {
+        description: "Their innovative ideas and flawless execution drove our success to new heights.",
+        name: "Michael Lee",
+        title: "CEO at Constructive Works",
+        companyLogo: "/assets/images/webp/us-logo.webp",
+        videoThumbnail: "/assets/images/webp/men-two-image.webp",
+    },
+];
+
+

@@ -1,19 +1,9 @@
-
 @font-face {
     font-family: 'testSöhneSchmal';
     src: url('../public/assets/font/TestSöhneSchmal-Dreiviertelfett.otf') format('truetype');
 }
-/* @font-face {
-    font-family: 'maisonNeue';
-    src: url('../public/assets/font/Maison-Neue-Book.ttf') format('truetype');
-} */
 
-@font-face {
-    font-family: "Maison Neue";
-    src: url('../public/assets/font/Maison-Neue.ttf') format("truetype");
-}
-
-@font-face {
+ @font-face {
     font-family: "MaisonNeueDemi";
     src: url('../public/assets/font/MaisonNeue-Demi.ttf') format("truetype");
 }
@@ -36,8 +26,32 @@
 @font-face {
     font-family: "MaisonNeueLight";
     src: url('../public/assets//font/MaisonNeue-Light.ttf') format("truetype");
-}
+} 
 
 body {
     font-family: 'Maison Neue', sans-serif;
+}
+
+
+.swiper-button-next{
+ background: transparent !important;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+    content: '' !important;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+content: '' !important;
+}
+
+
+.swiper-slide .layer {
+    opacity: 1;
+}
+
+.swiper-slide-active .layer {
+    opacity: 0;
 }
