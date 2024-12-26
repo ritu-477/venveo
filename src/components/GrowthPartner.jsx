@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Heading from "../common/Heading";
-import CustomButton from '../common/CustomButton'
-import { TABS_DATA } from '../utils/helper'
+import CustomButton from "../common/CustomButton";
+import { TABS_DATA } from "../utils/helper";
 
 const Tab = ({ activeTab }) => {
     switch (activeTab) {
@@ -16,19 +16,20 @@ const Tab = ({ activeTab }) => {
                             <p className="font-normal text-custom-lg leading-5 font-maisonMono text-left text-white pb-[98px] max-lg:pb-[57px] max-sm:text-xl max-w-[373px]">
                                 This is placeholder but can add more to the business of building, some epic fails (and how to avoid them), and everything building science.
                             </p>
-                            <div className="flex max-lg:mb-5 max-sm:w-full">
-                                <button className="bg-red-500 max-sm:w-full max-sm:justify-center flex px-[32px] py-[31px] text-white leading-custom-lg text-custom-lg"><img className="mr-[10px]" src="./assets/images/svg/subscribe-svg.svg" alt="" />
-                                    Subscribe to Podcast <span className="text-custom-sm leading-custom-xs ml-1 mt-[10px]"> ▼</span>
+                            <div className="flex max-lg:mb-5 max-sm:w-full items-center">
+                                <button className="bg-red-500 max-sm:w-full max-sm:justify-center flex items-center px-[32px] py-[31px] text-white leading-custom-lg text-custom-lg transition duration-700 hover:scale-105">
+                                    <img className="mr-[10px]" src="./assets/images/svg/subscribe-svg.svg" alt="" />
+                                    Subscribe to Podcast <span className="text-custom-sm leading-custom-xs ml-1 mt-[6px]"> ▼</span>
                                 </button>
                             </div>
                         </div>
                         <div className="lg:w-2/12 w-full">
                             <div className="flex lg:flex-col gap-5 sm:justify-between items-center max-sm:overflow-auto">
-                                <img src="/assets/images/webp/home-deploy-logo.webp" alt="Depot-Logo" className="max-w-[66px] lg:pb-20" />
-                                <img src="/assets/images/webp/ai-logo.webp" alt="ai-Logo" className="max-w-[66px] lg:pb-[62px]" />
-                                <img src="/assets/images/webp/lowes-logo.webp" alt="Lowes-Logo" className="max-w-[92px] lg:pb-[10px]" />
-                                <img src="/assets/images/webp/build-logo.webp" alt="Build-Logo" className="lg:max-w-[191px] max-w-[100px] lg:pb-[31.77px]" />
-                                <img src="/assets/images/webp/houzz-logo.webp" alt="Houzz-Logo" className="max-w-[117px]" />
+                                <img src="/assets/images/webp/home-deploy-logo.webp" alt="Depot-Logo" className="max-w-[66px] lg:pb-20 pointer-events-none" />
+                                <img src="/assets/images/webp/ai-logo.webp" alt="ai-Logo" className="max-w-[66px] lg:pb-[62px] pointer-events-none" />
+                                <img src="/assets/images/webp/lowes-logo.webp" alt="Lowes-Logo" className="max-w-[92px] lg:pb-[10px] pointer-events-none" />
+                                <img src="/assets/images/webp/build-logo.webp" alt="Build-Logo" className="lg:max-w-[191px] max-w-[100px] lg:pb-[31.77px] pointer-events-none" />
+                                <img src="/assets/images/webp/houzz-logo.webp" alt="Houzz-Logo" className="max-w-[117px] pointer-events-none" />
                             </div>
                         </div>
                         <div className="lg:w-5/12 w-full max-lg:mt-5">
@@ -44,10 +45,10 @@ const Tab = ({ activeTab }) => {
                     <p className="text-3xl font-light font-maisonLight text-left text-white ps-[19px] md:ps-20">
                         Not hopes and prayers. </p>
                     <div className="md:block hidden lg:max-w-[293px] absolute yellow-circle bottom-0 xl:bottom-[10%] left-[-5%]">
-                        <img className="lg:max-w-[293px]" src="./assets/images/webp/tab-two-yellow-circle.webp" alt="circle" />
+                        <img className="lg:max-w-[293px]" src="./assets/images/webp/tab-two-yellow-circle.webp pointer-events-none" alt="circle" />
                     </div>
                     <div className="md:block hidden lg:max-w-[189px] green-circle absolute top-[34%] right-[-5%]">
-                        <img src="./assets/images/webp/tab-two-green-circle.webp" alt="circle" />
+                        <img src="./assets/images/webp/tab-two-green-circle.webp pointer-events-none" alt="circle" />
                     </div>
                 </div>
             );
@@ -57,7 +58,7 @@ const Tab = ({ activeTab }) => {
                     <div className="lg:flex-row flex justify-between flex-col">
                         <div className="lg:w-5/12 w-full">
                             <Heading classStyle={'text-white uppercase'} text={'Project Radar'} />
-                            <img src="./assets/images/webp/tab-three-logo.webp" alt="tab-logo" className="pt-[7px] max-w-[72.86px] w-full" />
+                            <img src="./assets/images/webp/tab-three-logo.webp" alt="tab-logo" className="pt-[7px] max-w-[72.86px] w-full pointer-events-none" />
                             <p className="sm:text-3xl lg:max-w-[360px] font-light font-maisonLight text-left text-white sm:leading-custom-6xl pt-10 md:pt-20 lg:pt-[10rem] pb-[14px] text-2xl leading-custom-5xl">
                                 Lorem ipsum what this product actually does. </p>
                             <p className="text-white text-custom-lg font-normal leading-5 lg:max-w-[373px] font-maisonMono">This is placeholder but can add more the business of building, some epic fails (and how to avoid them) and everything building science.</p>
@@ -66,7 +67,7 @@ const Tab = ({ activeTab }) => {
                             </div>
                         </div>
                         <div className="lg:w-5/12 w-full flex max-lg:justify-center max-lg:items-center">
-                            <img src="/assets/images/webp/tab-three-card.webp" alt="Tab-Three-Map" />
+                            <img src="/assets/images/webp/tab-three-card.webp" alt="Tab-Three-Map" className="pointer-events-none" />
                         </div>
                     </div>
                 </div>
@@ -77,21 +78,16 @@ const Tab = ({ activeTab }) => {
 };
 
 const GrowthPartner = () => {
-    const [activeTab, setActiveTab] = useState("industry");
+    const [activeTab, setActiveTab] = useState(() => {
+        const queryParams = new URLSearchParams(window.location.search);
+        return queryParams.get("tab") || "industry";
+    });
 
     useEffect(() => {
         const queryParams = new URLSearchParams(window.location.search);
         queryParams.set("tab", activeTab);
-        window.history.pushState(null, "", `?${queryParams.toString()}`);
+        window.history.replaceState(null, "", `?${queryParams.toString()}`);
     }, [activeTab]);
-
-    useEffect(() => {
-        const queryParams = new URLSearchParams(window.location.search);
-        const initialTab = queryParams.get("tab");
-        if (initialTab && TABS_DATA.some(tab => tab.id === initialTab)) {
-            setActiveTab(initialTab);
-        }
-    }, []);
 
     return (
         <div className="py-14 flex justify-center relative">
@@ -122,7 +118,7 @@ const GrowthPartner = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 lg:bottom-7 -z-10 left-0"><img src="/assets/images/webp/tab-green-line.webp" alt="tab-line" className="w-full" /></div>
+            <div className="absolute bottom-0 lg:bottom-7 -z-10 left-0 pointer-events-none"><img src="/assets/images/webp/tab-green-line.webp" alt="tab-line" className="w-full" /></div>
         </div>
     );
 };

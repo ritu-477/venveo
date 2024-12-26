@@ -7,7 +7,7 @@ const Outsmart = () => {
             <img
                 src="/assets/images/svg/outsmart-arrow.svg"
                 alt="arrow-image"
-                className="absolute xl:left-[40rem] lg:left-[28rem] xl:block hidden xl:top-[6.5rem] lg:top-[9rem] top-[11rem] sm:left-[26rem] left-[4rem] sm:top-[8rem]"
+                className="absolute pointer-events-none xl:left-[40rem] lg:left-[28rem] xl:block hidden xl:top-[6.5rem] lg:top-[9rem] top-[11rem] sm:left-[26rem] left-[4rem] sm:top-[8rem]"
             />
             <div className="max-xl:container">
                 <div className="md:flex justify-between items-center max-lg:flex-col max-w-[1920px] mx-auto">

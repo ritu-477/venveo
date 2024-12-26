@@ -53,7 +53,7 @@ const ActualResults = () => {
                                 <img
                                     src={obj.videoThumbnail}
                                     alt="Thumbnail"
-                                    className="!max-w-[640px] w-full mx-auto object-cover rounded transition-all duration-300 ease-in-out"
+                                    className="!max-w-[640px] pointer-events-none w-full mx-auto object-cover rounded transition-all duration-300 ease-in-out"
                                 />
                                 <p className="mt-[30px] text-2xl leading-custom-5xl sm:text-3xl sm:leading-custom-7xl font-light font-maisonLight max-w-[251px] sm:max-w-[640px] md:mt-[74px] mx-auto">
                                     "{obj.description}"

@@ -53,13 +53,13 @@ const Features = () => {
                             src={item.src}
                             alt={item.alt}
                             style={{ maxWidth: item.maxWidth }}
-                            className="h-auto object-contain"
+                            className="h-auto object-contain pointer-events-none"
                         />
                     ))}
                 </div>
             </div>
-            <img src="/assets/images/webp/green-line.webp" alt="line-image" className="w-full sm:block hidden h-[47px] mx-auto" />
-            <img src="/assets/images/webp/mobile-green-line.webp" alt="mobile-line" className='sm:hidden block w-full h-[43px]' />
+            <img src="/assets/images/webp/green-line.webp" alt="line-image" className="w-full sm:block hidden h-[47px] mx-auto pointer-events-none" />
+            <img src="/assets/images/webp/mobile-green-line.webp" alt="mobile-line" className='sm:hidden block w-full h-[43px] pointer-events-none' />
         </div>
     );
 };
