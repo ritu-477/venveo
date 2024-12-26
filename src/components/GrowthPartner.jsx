@@ -77,21 +77,21 @@ const Tab = ({ activeTab }) => {
 };
 
 const GrowthPartner = () => {
-    const [activeTab, setActiveTab] = useState("industry");
+        const [activeTab, setActiveTab] = useState("industry");
 
-    useEffect(() => {
-        const queryParams = new URLSearchParams(window.location.search);
-        queryParams.set("tab", activeTab); 
-        window.history.pushState(null, "", `?${queryParams.toString()}`); 
-    }, [activeTab]);
+        useEffect(() => {
+            const queryParams = new URLSearchParams(window.location.search);
+            queryParams.set("tab", activeTab); 
+            window.history.pushState(null, "", `?${queryParams.toString()}`); 
+        }, [activeTab]);
 
-    useEffect(() => {
-        const queryParams = new URLSearchParams(window.location.search);
-        const initialTab = queryParams.get("tab");
-        if (initialTab && TABS_DATA.some(tab => tab.id === initialTab)) {
-            setActiveTab(initialTab);
-        }
-    }, []);
+        useEffect(() => {
+            const queryParams = new URLSearchParams(window.location.search);
+            const initialTab = queryParams.get("tab");
+            if (initialTab && TABS_DATA.some(tab => tab.id === initialTab)) {
+                setActiveTab(initialTab);
+            }
+        }, []);
 
     return (
         <div className="py-14 flex justify-center relative">

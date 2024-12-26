@@ -55,3 +55,10 @@ content: '' !important;
 .swiper-slide-active .layer {
     opacity: 0;
 }
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    background-color: white !important;
+    border-radius: 0 !important;
+}
+
+
