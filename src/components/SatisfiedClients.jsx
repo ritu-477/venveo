@@ -49,7 +49,7 @@ const SatisfiedClients = () => {
                   </p>
                   <p className="text-custom-lg leading-5 font-normal font-maisonMono pt-6">{data.details}</p>
                   <button
-                    className="font-semibold text-custom-lg leading-5 max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group"
+                    className="font-semibold text-custom-lg text-nowrap leading-5 max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group"
                     
                   >
                     Learn More{' '}
