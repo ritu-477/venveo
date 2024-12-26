@@ -74,7 +74,7 @@ const ActualResults = () => {
                     ))}
                 </Swiper>
             </div>
-            <img src="/assets/images/webp/actual-green-line.webp" alt="dark-green-line" className='w-full absolute sm:bottom-[-26px] bottom-[-14px] left-0' />
+            <img src="/assets/images/webp/actual-green-line.webp" alt="dark-green-line" className='w-full absolute pointer-events-none sm:bottom-[-26px] bottom-[-14px] left-0' />
         </div>
     );
 };
