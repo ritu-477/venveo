@@ -45,10 +45,10 @@ const Tab = ({ activeTab }) => {
                     <p className="text-3xl font-light font-maisonLight text-left text-white ps-[19px] md:ps-20">
                         Not hopes and prayers. </p>
                     <div className="md:block hidden lg:max-w-[293px] absolute yellow-circle bottom-0 xl:bottom-[10%] left-[-5%]">
-                        <img className="lg:max-w-[293px]" src="./assets/images/webp/tab-two-yellow-circle.webp pointer-events-none" alt="circle" />
+                        <img className="lg:max-w-[293px] pointer-events-none" src="./assets/images/webp/tab-two-yellow-circle.webp" alt="circle" />
                     </div>
                     <div className="md:block hidden lg:max-w-[189px] green-circle absolute top-[34%] right-[-5%]">
-                        <img src="./assets/images/webp/tab-two-green-circle.webp pointer-events-none" alt="circle" />
+                        <img className="pointer-events-none" src="./assets/images/webp/tab-two-green-circle.webp" alt="circle" />
                     </div>
                 </div>
             );
