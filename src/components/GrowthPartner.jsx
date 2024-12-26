@@ -77,21 +77,21 @@ const Tab = ({ activeTab }) => {
 };
 
 const GrowthPartner = () => {
-        const [activeTab, setActiveTab] = useState("industry");
+    const [activeTab, setActiveTab] = useState("industry");
 
-        useEffect(() => {
-            const queryParams = new URLSearchParams(window.location.search);
-            queryParams.set("tab", activeTab); 
-            window.history.pushState(null, "", `?${queryParams.toString()}`); 
-        }, [activeTab]);
+    useEffect(() => {
+        const queryParams = new URLSearchParams(window.location.search);
+        queryParams.set("tab", activeTab);
+        window.history.pushState(null, "", `?${queryParams.toString()}`);
+    }, [activeTab]);
 
-        useEffect(() => {
-            const queryParams = new URLSearchParams(window.location.search);
-            const initialTab = queryParams.get("tab");
-            if (initialTab && TABS_DATA.some(tab => tab.id === initialTab)) {
-                setActiveTab(initialTab);
-            }
-        }, []);
+    useEffect(() => {
+        const queryParams = new URLSearchParams(window.location.search);
+        const initialTab = queryParams.get("tab");
+        if (initialTab && TABS_DATA.some(tab => tab.id === initialTab)) {
+            setActiveTab(initialTab);
+        }
+    }, []);
 
     return (
         <div className="py-14 flex justify-center relative">
@@ -106,15 +106,13 @@ const GrowthPartner = () => {
                                 key={tab.id}
                                 className={`tab text-lg text-light-black font-semibold whitespace-nowrap relative ${activeTab === tab.id ? "!text-black opacity-100" : ""
                                     }`}
-                                onClick={() => setActiveTab(tab.id)}
-                            >
+                                onClick={() => setActiveTab(tab.id)}>
                                 {tab.label}
                                 {activeTab === tab.id && (
                                     <img
                                         className="absolute top-full max-w-[155px] sm:max-w-[183.85px] left-1/2 transform -translate-x-1/2"
                                         alt="active-line"
-                                        src="./assets/images/webp/tab-active-line.webp"
-                                    />
+                                        src="./assets/images/webp/tab-active-line.webp" />
                                 )}
                             </button>
                         ))}

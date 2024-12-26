@@ -7,6 +7,7 @@ export const NAV_ITEMS_LIST = [
             { label: 'Option 3'},
         ],
     },
+    
     {
         list: 'Who We Help',
         data: [
@@ -22,6 +23,7 @@ export const NAV_ITEMS_LIST = [
             { label: 'Reason 2',},
         ],
     },
+
     {
         list: 'Resources',
         data: [
@@ -138,7 +140,6 @@ export const TABS_DATA = [
 
 export const ACTUAL_RESULTS = [
     
-
     {
         description: "Venveo helped us achieve growth beyond expectations with an excellent brand strategy.",
         name: "Sarah Johnson",
@@ -163,13 +164,6 @@ export const ACTUAL_RESULTS = [
         videoThumbnail: "/assets/images/webp/men-three-image.webp",
     },
 
-    {
-        description: "Their innovative ideas and flawless execution drove our success to new heights.",
-        name: "Michael Lee",
-        title: "CEO at Constructive Works",
-        companyLogo: "/assets/images/webp/us-logo.webp",
-        videoThumbnail: "/assets/images/webp/men-two-image.webp",
-    },
 ];
 
 
