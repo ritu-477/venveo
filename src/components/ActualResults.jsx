@@ -8,7 +8,7 @@ import { ACTUAL_RESULTS } from '../utils/helper';
 
 const ActualResults = () => {
     return (
-        <div className="bg-actual bg-no-repeat bg-center bg-cover text-white pt-[67px] lg:pt-[119px] pb-6 sm:pb-8 mt-10 relative">
+        <div className="bg-actual bg-no-repeat bg-center bg-cover text-white pt-[67px] lg:pt-[119px] pb-6 sm:pb-8 mt-10 relative mb-14">
             <p className="font-maisonLight max-sm:px-4 font-light text-3xl leading-custom-6xl text-white text-center">
                 Actual businesses.
             </p>
@@ -72,6 +72,7 @@ const ActualResults = () => {
                     </SwiperSlide>
                 ))}
             </Swiper>
+            <img src="/assets/images/webp/actual-green-line.webp" alt="dark-green-line" className='w-full absolute sm:bottom-[-26px] bottom-[-14px] left-0' />
         </div>
     );
 };
