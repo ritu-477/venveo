@@ -51,7 +51,7 @@ const DigitalMarketing = () => {
                       ))}
                     </ul>
                     <button
-                      className={`font-semibold text-custom-lg leading-5 max-w-[164px] flex gap-[6px] items-center transition-all duration-500 group ${index === 0
+                      className={`font-semibold text-custom-lg leading-5 text-nowrap max-w-[164px] flex gap-[6px] items-center transition-all duration-500 group ${index === 0
                           ? "sm:pt-[42px] pt-8"
                           : index === 1
                             ? "sm:pt-[24px] pt-8"
