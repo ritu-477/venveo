@@ -1,9 +1,20 @@
 @font-face {
-    font-family: 'testSöhneSchmal';
-    src: url('../public/assets/font/TestSöhneSchmal-Dreiviertelfett.otf') format('truetype');
+    font-family: "testSöhneSchmal";
+    src: url('../public/assets/font/sohne-schmal-fett.woff2') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
- @font-face {
+@font-face {
+    font-family: "testSöhneSchmal";
+    src: url('../public/assets/font/soehne-schmal-dreiviertelfett.woff2') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: "MaisonNeueDemi";
     src: url('../public/assets/font/MaisonNeue-Demi.ttf') format("truetype");
 }
@@ -26,15 +37,15 @@
 @font-face {
     font-family: "MaisonNeueLight";
     src: url('../public/assets//font/MaisonNeue-Light.ttf') format("truetype");
-} 
+}
 
 body {
     font-family: 'Maison Neue', sans-serif;
 }
 
 
-.swiper-button-next{
- background: transparent !important;
+.swiper-button-next {
+    background: transparent !important;
 }
 
 .swiper-button-next:after,
@@ -44,12 +55,10 @@ body {
 
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
-content: '' !important;
+    content: '' !important;
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
     background-color: white !important;
     border-radius: 0 !important;
 }
-
-

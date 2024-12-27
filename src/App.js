@@ -6,6 +6,9 @@ import DigitalMarketing from './components/DigitalMarketing';
 import Outsmart from './components/Outsmart';
 import GrowthPartner from './components/GrowthPartner';
 import ActualResults from './components/ActualResults';
+import MarketingCards from './components/MarketingCards';
+import Ready from './components/Ready';
+import LearnFrom from './components/LearnFrom';
 
 function App() {
   return (
@@ -16,7 +19,10 @@ function App() {
       <DigitalMarketing />
       <Outsmart />
       <GrowthPartner />
-      <ActualResults/>
+      <ActualResults />
+      <LearnFrom/>
+      <MarketingCards />
+      <Ready/>
     </>
   );
 }

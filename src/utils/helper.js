@@ -167,3 +167,58 @@ export const ACTUAL_RESULTS = [
 ];
 
 
+export const MARKETING_DATA = [
+    {
+        title: "multi-channel marketing",
+        subtitle: "How to Get Your Product into Lowe’s",
+        description: "Understanding the process and maximize the opportunities",
+        buttonText:"Read More",
+        bgImage: "bg-marketing-bg-one", 
+    },
+
+    {
+        title: "lead-gen",
+        subtitle: "Get Your Sales Team Ready for Digital Leads",
+        description:
+            "Unlock substantial business growth by enhancing collaboration skills and digital marketing expertise",
+        bgImage: "bg-marketing-bg-two",
+        buttonText: "Read More",
+
+    },
+
+    {
+        title: "ecommerce",
+        subtitle: "How to Sell Building Materials Online",
+        description:
+            "Explore how selling building materials online opens up wider audiences, efficient sales, and insightful data.",
+        bgImage: "bg-marketing-bg-three",
+        buttonText: "Read More",
+
+    },
+];
+
+export const MARKETING_MOBILE_DATA = [
+    {
+        title: "multi-channel marketing",
+        subtitle: "How to Get Your Product into Lowe’s",
+        buttonText: "Read More",
+        bgImage: "bg-marketing-mobile-one",
+    },
+
+    {
+        title: "lead-gen",
+        subtitle: "Get Your Sales Team Ready for Digital Leads",
+        bgImage: "bg-marketing-mobile-two",
+        buttonText: "Read More",
+
+    },
+
+    {
+        title: "ecommerce",
+        subtitle: "How to Sell Building Materials Online",
+        bgImage: "bg-marketing-mobile-three",
+        buttonText: "Read More",
+
+    },
+];
+

@@ -13,21 +13,14 @@ const SatisfiedClients = () => {
       <div className="max-w-[1920px] mx-auto">
         <div className="max-w-[586px] mx-auto">
           <p className="font-light sm:text-3xl sm:leading-custom-6xl text-2xl leading-custom-5xl text-center font-maisonLight pb-[7px]">
-            Driving digital revenue for over
-          </p>
+            Driving digital revenue for over</p>
           <Heading text={'1,400+ SATISFIED CLIENTS.'} classStyle={'text-center'} />
-          <img
-            src="/assets/images/svg/red-line.svg"
-            alt="red-line"
-            className="lg:max-w-[119.62px] max-w-[84px] lg:ms-2 sm:ms-20 max-sm:-mt-[52px] ms-10"
-          />
+          <img src="/assets/images/svg/red-line.svg" alt="red-line" className="lg:max-w-[119.62px] max-w-[84px] lg:ms-2 sm:ms-20 max-sm:-mt-[52px] ms-10" />
         </div>
         <div className='xl:flex hidden justify-center gap-[60px] max-w-[1920px] mx-auto pt-[88px]'>
           {SATISFIED_CLIENT_LIST.map((data, index) => (
             <div key={index}>
-              <div
-                className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_29px_33px_29px] max-w-[440px] h-[500px]`}
-              >
+              <div className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_29px_33px_29px] max-w-[440px] h-[500px]`}>
                 <div className="max-w-[382px] p-[38px_24px_31px_24px] bg-white rounded-[25px]">
                   {data.title && (
                     <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 group hover:bg-black transition-all duration-500">
@@ -36,22 +29,11 @@ const SatisfiedClients = () => {
                       </p>
                     </div>
                   )}
-                  <a href="/">
-                    <img
-                      src={data.logo}
-                      alt="logo"
-                      className={`${index === 0 ? 'max-w-[131px] pt-5' : index === SATISFIED_CLIENT_LIST.length - 1 ? 'max-w-[49px] pt-0' : 'max-w-[149.73px] pt-5'}`}
-                    />
-                  </a>
-
+                  <a href="/"><img src={data.logo} alt="logo" className={`${index === 0 ? 'max-w-[131px] pt-5' : index === SATISFIED_CLIENT_LIST.length - 1 ? 'max-w-[49px] pt-0' : 'max-w-[149.73px] pt-5'}`} /></a>
                   <p className="font-maisonLight font-light text-2xl leading-custom-5xl sm:text-3xl sm:leading-custom-6xl pt-6">
-                    {data.description}
-                  </p>
+                    {data.description}</p>
                   <p className="text-custom-lg leading-5 font-normal font-maisonMono pt-6">{data.details}</p>
-                  <button
-                    className="font-semibold text-custom-lg text-nowrap leading-5 max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group"
-                    
-                  >
+                  <button className="font-semibold text-custom-lg text-nowrap leading-5 max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group">
                     Learn More{' '}
                     <Icon classStyle={'group-hover:translate-x-1 transition-all duration-500'} iconName={'arrowIcon'} />
                   </button>
@@ -69,7 +51,7 @@ const SatisfiedClients = () => {
               </div>
             </div>
           ))}
-</div>
+        </div>
         <div className="xl:hidden block sm:mt-12 mt-[90px]">
           <Swiper
             spaceBetween={30}
@@ -83,9 +65,7 @@ const SatisfiedClients = () => {
           >
             {SATISFIED_CLIENT_LIST.map((data, index) => (
               <SwiperSlide key={index}>
-                <div
-                  className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_20px_33px_20px] max-w-[440px] h-[500px]`}
-                >
+                <div className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_20px_33px_20px] max-w-[440px] h-[500px]`}>
                   <div className="max-w-[382px] p-[38px_20px_32px_22px] bg-white rounded-[25px]">
                     {data.title && (
                       <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 group hover:bg-black transition-all duration-500">
@@ -94,20 +74,13 @@ const SatisfiedClients = () => {
                         </p>
                       </div>
                     )}
-                    <a href="/">
-                      <img
-                        src={data.logo}
-                        alt="logo"
-                        className={`${index === 0 ? 'max-w-[131px] pt-5' : index === SATISFIED_CLIENT_LIST.length - 1 ? 'max-w-[49px] pt-0' : 'max-w-[149.73px] pt-5'}`}
-                      />
-                    </a>
+                    <a href="/"><img src={data.logo} alt="logo" className={`${index === 0 ? 'max-w-[131px] pt-5' : index === SATISFIED_CLIENT_LIST.length - 1 ? 'max-w-[49px] pt-0' : 'max-w-[149.73px] pt-5'}`} /></a>
                     <p className="font-maisonLight font-light text-2xl leading-custom-5xl pt-6">
                       {data.description}
                     </p>
                     <p className="text-custom-lg leading-5 font-normal font-maisonMono pt-6">{data.details}</p>
                     <button
-                      className="font-semibold text-custom-lg leading-5 max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group"
-                    >
+                      className="font-semibold text-custom-lg leading-5 max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group">
                       Learn More{' '}
                       <Icon classStyle={'group-hover:translate-x-1 transition-all duration-500'} iconName={'arrowIcon'} />
                     </button>

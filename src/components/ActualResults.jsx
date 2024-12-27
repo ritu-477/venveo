@@ -8,7 +8,7 @@ import { ACTUAL_RESULTS } from '../utils/helper';
 
 const ActualResults = () => {
     return (
-        <div className="bg-actual bg-no-repeat bg-center bg-cover text-white pt-[67px] lg:pt-[119px] pb-6 sm:pb-8 mt-10 relative mb-14">
+        <div className="bg-actual bg-no-repeat bg-center bg-cover text-white pt-[67px] lg:pt-[119px] pb-6 sm:pb-8 mt-10 relative mb-14 overflow-hidden">
             <div className='max-w-[1920px] mx-auto 2xl:container relative'>
                 <p className="font-maisonLight max-sm:px-4 font-light text-3xl leading-custom-6xl text-white text-center">
                     Actual businesses.
@@ -23,7 +23,7 @@ const ActualResults = () => {
                         <img alt="prev-btn" className="sm:my-14 sm:mx-8 my-10 mx-6" src="/assets/images/svg/prev-button.svg" />
                     </button>
                 </div>
-                <div className="swiper-button-next absolute right-4 md:right-8 top-[50%] transform translate-y-[170%] sm:-translate-y-[50%]">
+                <div className="swiper-button-next absolute right-4 md:right-6 top-[50%] transform translate-y-[170%] sm:-translate-y-[50%]">
                     <button className="bg-white rounded-l-[25px] flex items-center justify-center">
                         <img alt="next-btn" className="sm:my-14 sm:mx-8 my-10 mx-6" src="/assets/images/svg/next-button.svg" />
                     </button>

@@ -77,6 +77,13 @@ module.exports = {
         'actual': "url('/public/assets/images/webp/actual-bg.webp')",
         'mobile-tab-two': "url('/public/assets/images/webp/mobile-bg-tab-two.webp')",
         'mobile-tab-three': "url('/public/assets/images/webp/mobile-tab-three-bg.webp')",
+        'marketing-bg-one': "url('/public/assets/images/webp/marketing-bg-one.webp')",
+        'marketing-bg-two': "url('/public/assets/images/webp/marketing-bg-two.webp')",
+        'marketing-bg-three': "url('/public/assets/images/webp/marketing-bg-three.webp')",
+        'marketing-mobile-one': "url('/public/assets/images/webp/marketing-mobile-one.webp')",
+        'marketing-mobile-two': "url('/public/assets/images/webp/marketing-mobile-two.webp')",
+        'marketing-mobile-three': "url('/public/assets/images/webp/marketing-mobile-three.webp')",
+        'ready': "url('/public/assets/images/webp/ready-bg.webp')",
       },
 
     },

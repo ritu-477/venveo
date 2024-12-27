@@ -5,8 +5,8 @@
 
 @media (min-width:640px) and (max-width:1389.99px) {
     .yellow-circle {
-       left: 0 !important;
-       max-width: 220px;
+        left: 0 !important;
+        max-width: 220px;
     }
 
     .green-circle {
@@ -22,5 +22,9 @@
 
     .green-circle {
         right: -5% !important;
+    }
+
+    .swiper-button-next {
+        right: 18px !important;
     }
 }
