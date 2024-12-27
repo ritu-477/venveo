@@ -44,6 +44,11 @@ const Header = () => {
         };
     }, [isMenuOpen]);
 
+    useEffect(() => {
+        // Lock the page scroll when menu is open
+        document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+    }, [isMenuOpen]);
+
     return (
         <div className="lg:ms-[56px]">
             <div className="max-lg:container max-w-[1920px] mx-auto">
@@ -104,7 +109,7 @@ const Header = () => {
                     </div>
                     <div
                         onClick={toggleMenu}
-                        className="menuIcon pt-3 relative max-lg:w-8 max-lg:h-10 z-[15] max-lg:flex max-lg:justify-center gap-3 max-lg:flex-col max-lg:cursor-pointer transition ease-linear duration-300 lg:hidden items-center"
+                        className={`menuIcon pt-3 mr-4 relative max-lg:w-8 max-lg:h-10 z-[15] max-lg:flex max-lg:justify-center gap-3 max-lg:flex-col max-lg:cursor-pointer transition ease-linear duration-300 lg:hidden items-center ${isMenuOpen ? 'fixed top-3 left-3' : ''}`}
                     >
                         {isMenuOpen ? (
                             <>
