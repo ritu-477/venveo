@@ -62,3 +62,12 @@ body {
     background-color: white !important;
     border-radius: 0 !important;
 }
+
+.thumbnail-image {
+    opacity: 0.2;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.swiper-slide-active .thumbnail-image {
+    opacity: 1;
+}
