@@ -23,7 +23,7 @@ const ActualResults = () => {
                         <img alt="prev-btn" className="sm:my-14 sm:mx-8 my-10 mx-6" src="/assets/images/svg/prev-button.svg" />
                     </button>
                 </div>
-                <div className="swiper-button-next absolute right-4 md:right-6 top-[50%] transform translate-y-[170%] sm:-translate-y-[238%]">
+                <div className="swiper-button-next absolute !right-4 !md:right-6 top-[50%] transform translate-y-[170%] sm:-translate-y-[238%]">
                     <button className="bg-white rounded-l-[25px] flex items-center justify-center">
                         <img alt="next-btn" className="sm:my-14 sm:mx-8 my-10 mx-6" src="/assets/images/svg/next-button.svg" />
                     </button>
