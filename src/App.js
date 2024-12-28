@@ -9,6 +9,7 @@ import ActualResults from './components/ActualResults';
 import MarketingCards from './components/MarketingCards';
 import Ready from './components/Ready';
 import LearnFrom from './components/LearnFrom';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
       <ActualResults />
       <LearnFrom/>
       <MarketingCards />
-      <Ready/>
+      <Ready />
+      <Footer/>
     </>
   );
 }

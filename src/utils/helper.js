@@ -222,3 +222,36 @@ export const MARKETING_MOBILE_DATA = [
     },
 ];
 
+export const FOOTER_DATA = [
+    {
+        title: "how we help",
+        links: [
+            "Drive More Awareness",
+            "Get more Customers",
+            "Build Your Brand",
+            "Improve your reputation",
+            "Track Results",
+        ],
+    },
+
+    {
+        title: "who we help",
+        links: [
+            "Digital Advertising",
+            "Search Engine Ranking",
+            "Content Marketing",
+            "Programmatic Advertising",
+            "Email Marketing",
+        ],
+    },
+
+    {
+        title: "why venveo",
+        links: ["About Us", "Careers", "Growth Studies", "Improve your reputation", "Testimonials"],
+    },
+
+    {
+        title: "resources",
+        links: ["Articles", "News", "Webinars", "eBooks", "Podcast"],
+    },
+];

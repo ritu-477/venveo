@@ -20,7 +20,7 @@ const SatisfiedClients = () => {
         <div className='xl:flex hidden justify-center gap-[60px] max-w-[1920px] mx-auto pt-[88px]'>
           {SATISFIED_CLIENT_LIST.map((data, index) => (
             <div key={index}>
-              <div className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_29px_33px_29px] max-w-[440px] h-[500px]`}>
+              <div className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_29px_33px_29px] max-w-[440px] h-full`}>
                 <div className="max-w-[382px] p-[38px_24px_31px_24px] bg-white rounded-[25px]">
                   {data.title && (
                     <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 group hover:bg-black transition-all duration-500">
@@ -65,8 +65,8 @@ const SatisfiedClients = () => {
           >
             {SATISFIED_CLIENT_LIST.map((data, index) => (
               <SwiperSlide key={index}>
-                <div className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_20px_33px_20px] max-w-[440px] h-[500px]`}>
-                  <div className="max-w-[382px] p-[38px_20px_32px_22px] bg-white rounded-[25px]">
+                <div className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_20px_33px_20px] w-full xl:max-w-[440px] h-full`}>
+                  <div className="xl:max-w-[382px] p-[38px_20px_32px_22px] bg-white rounded-[25px]">
                     {data.title && (
                       <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 group hover:bg-black transition-all duration-500">
                         <p className="text-xs group-hover:text-white text-black leading-5 font-semibold font-MaisonNeue transition-all duration-500">
@@ -80,7 +80,7 @@ const SatisfiedClients = () => {
                     </p>
                     <p className="text-custom-lg leading-5 font-normal font-maisonMono pt-6">{data.details}</p>
                     <button
-                      className="font-semibold text-custom-lg leading-5 max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group">
+                      className="font-semibold text-custom-lg leading-5 xl:max-w-[97px] flex gap-[9px] items-center pt-[54px] transition-all duration-500 group">
                       Learn More{' '}
                       <Icon classStyle={'group-hover:translate-x-1 transition-all duration-500'} iconName={'arrowIcon'} />
                     </button>

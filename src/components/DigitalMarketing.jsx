@@ -8,7 +8,11 @@ const DigitalMarketing = () => {
 
   return (
     <div className="lg:py-[66px] md:py-12 py-6 relative">
-      <img className="absolute sm:block hidden sm:top-[17%] xl:top-[29%] w-full z-[-1]" src="/assets/images/svg/yellow-line.svg" alt="yellow-line" />
+      <img
+        className="absolute sm:block hidden sm:top-[17%] lg:top-[29%] w-full z-[-1]"
+        src="/assets/images/svg/yellow-line.svg"
+        alt="yellow-line"
+      />
       <div className='px-4 mx-auto'>
         <p className="font-light sm:text-3xl sm:leading-custom-6xl text-2xl leading-custom-5xl text-center font-maisonLight pb-[3px]">
           Problems we solve.
@@ -20,15 +24,19 @@ const DigitalMarketing = () => {
         <p className="font-normal text-custom-lg leading-5 font-maisonMono sm:pt-[22px] pt-5 text-center max-w-[293px] sm:max-w-[641px] mx-auto max-sm:pb-[11px]">
           We help companies scale their strategies across multiple channels to drive more revenue, more quickly, without cutting corners.
         </p>
-        </div>
-      <img src="/assets/images/svg/mobile-yellow-line.svg" className="w-full sm:hidden block" alt="yellow-line" />
-        <div className="container">
+      </div>
+      <img
+        src="/assets/images/svg/mobile-yellow-line.svg"
+        className="w-full sm:hidden block"
+        alt="yellow-line"
+      />
+      <div className="container">
         <div className="sm:pt-[83px] pt-11 max-w-[1072px] mx-auto">
-          <div className="flex flex-wrap lg:gap-[66px] gap-10 justify-center w-full">
+          <div className="grid lg:grid-cols-2 lg:gap-x-[66px] gap-y-10 justify-center w-full">
             {DIGITAL_MARKETING_LIST.map((obj, index) => (
               <div
                 key={index}
-                className={`border-2 bg-white border-aqua-green w-full max-w-[503px] px-[30px] lg:pt-[65px] lg:pb-[54px] pt-[34px] pb-[36.25px] rounded-[25px] lg:h-[506px] ${!showAll && index > 0 ? "hidden sm:block" : ""
+                className={`border-2 bg-white border-aqua-green w-full max-w-[503px] px-[30px] lg:pt-[65px] lg:pb-[54px] pt-[34px] pb-[36.25px] rounded-[25px] ${!showAll && index > 3 ? "hidden sm:block" : ""
                   }`}
               >
                 <div className="lg:flex max-lg:flex-wrap gap-6">
@@ -38,14 +46,19 @@ const DigitalMarketing = () => {
                       {obj.title}
                     </p>
                     <p
-                      className={`font-normal text-custom-lg leading-5 font-maisonMono lg:max-w-[315px] ${index === 0 || index === 1 ? "sm:pt-[22px] pt-[15px]" : "sm:pt-[42px] pt-[15px]"
+                      className={`font-normal text-custom-lg leading-5 font-maisonMono lg:max-w-[315px] ${index === 0 || index === 1
+                          ? "sm:pt-[22px] pt-[15px]"
+                          : "sm:pt-[42px] pt-[15px]"
                         }`}
                     >
                       {obj.description}
                     </p>
                     <ul className="list-disc md:pt-8 pl-5 pt-4">
                       {obj.points.map((point, idx) => (
-                        <li key={idx} className="text-custom-lg leading-5 font-semibold font-MaisonNeue max-w-[285px]">
+                        <li
+                          key={idx}
+                          className="text-custom-lg leading-5 font-semibold font-MaisonNeue max-w-[285px]"
+                        >
                           {point}
                         </li>
                       ))}
@@ -76,8 +89,7 @@ const DigitalMarketing = () => {
           <div className="justify-center mt-12 max-sm:flex hidden">
             <button
               className="font-semibold text-custom-lg leading-custom-lg"
-              onClick={() => setShowAll(!showAll)}
-            >
+              onClick={() => setShowAll(!showAll)}>
               {showAll ? "Show Less Solutions ▲" : "Show More Solutions ▼"}
             </button>
           </div>
