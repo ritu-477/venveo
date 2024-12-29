@@ -224,34 +224,82 @@ export const MARKETING_MOBILE_DATA = [
 
 export const FOOTER_DATA = [
     {
-        title: "how we help",
+        title: "HOW WE HELP",
         links: [
-            "Drive More Awareness",
-            "Get more Customers",
-            "Build Your Brand",
-            "Improve your reputation",
-            "Track Results",
+            { text: "Drive More Awareness", href: "/" },
+            { text: "Get More Customers", href: "/" },
+            { text: "Build Your Brand", href: "/" },
+            { text: "Improve your reputation", href: "/" },
+            { text: "Track Results", href: "/" },
         ],
     },
-
     {
-        title: "who we help",
+        title: "WHO WE HELP",
         links: [
-            "Digital Advertising",
-            "Search Engine Ranking",
-            "Content Marketing",
-            "Programmatic Advertising",
-            "Email Marketing",
+            { text: "Digital Advertising", href: "/" },
+            { text: "Search Engine Ranking", href: "/" },
+            { text: "Content Marketing", href: "/" },
+            { text: "Programic Advertising", href: "/" },
+            { text: "Email Marketing", href: "/" },
         ],
     },
-
     {
-        title: "why venveo",
-        links: ["About Us", "Careers", "Growth Studies", "Improve your reputation", "Testimonials"],
+        title: "WHY VENveo",
+        links: [
+            { text: "About Us", href: "/" },
+            { text: "Careers", href: "/" },
+            { text: "Growth Studies", href: "/" },
+            { text: "Testimonials", href: "/" },
+        ],
     },
-
     {
-        title: "resources",
-        links: ["Articles", "News", "Webinars", "eBooks", "Podcast"],
+        title: "RESOURCES",
+        links: [
+            { text: "Articles", href: "/" },
+            { text: "News", href: "/" },
+            { text: "Webinars", href: "/" },
+            { text: "EBooks", href: "/" },
+            { text: "Podcast", href: "/" },
+        ],
     },
 ];
+
+export const FOOTER_LIST = {
+    logo: {
+        src: "/assets/images/webp/footer-logo.webp",
+        alt: "footer-logo",
+        description: "Venveo is an award-winning digital marketing solutions provider.",
+        copyright: "©2024 Venveo",
+    },
+
+    visit: {
+        title: "VISIT",
+        address: "100 N Main Street\n#201\nBlacksburg, VA 24060",
+        link: "/",
+    },
+
+    contact: {
+        title: "CONTACT",
+        email: {
+            text: "info@venveo.com",
+            link: "mailto:info@venveo.com",
+        },
+        phone: {
+            text: "1 · 800 · 123 · 4567",
+            link: "/",
+        },
+    },
+
+    socialLinks: [
+        { name: "facebook", url: "https://facebook.com" },
+        { name: "instagram", url: "https://instagram.com" },
+        { name: "twitter", url: "https://twitter.com" },
+        { name: "linkedin", url: "https://linkedin.com" },
+        { name: "youtube", url: "https://youtube.com" },
+    ],
+    
+    footerPolicies: ["All Rights Reserved", "Privacy Policy"],
+};
+
+
+
