@@ -27,17 +27,16 @@ const DigitalMarketing = () => {
       </div>
       <img
         src="/assets/images/svg/mobile-yellow-line.svg"
-        className="w-full sm:hidden block"
+        className="w-full sm:hidden block h-12"
         alt="yellow-line"
-      />
+      /> 
       <div className="container">
-        <div className="sm:pt-[83px] pt-11 max-w-[1072px] mx-auto">
+        <div className="sm:pt-[83px] pt-[33px] max-w-[1072px] mx-auto">
           <div className="grid lg:grid-cols-2 lg:gap-x-[66px] gap-y-10 justify-center w-full">
             {DIGITAL_MARKETING_LIST.map((obj, index) => (
               <div
                 key={index}
-                className={`border-2 bg-white border-aqua-green w-full max-w-[503px] px-[30px] lg:pt-[65px] lg:pb-[54px] pt-[34px] pb-[36.25px] rounded-[25px] ${!showAll && index > 3 ? "hidden sm:block" : ""
-                  }`}
+                className={`border-2 bg-white border-aqua-green w-full max-w-[503px] lg:h-[506px] px-[30px] lg:pt-[65px] lg:pb-[54px] pt-[34px] pb-[36.25px] rounded-[25px] ${!showAll && index > 0 ? "hidden sm:block" : ""}`}
               >
                 <div className="lg:flex max-lg:flex-wrap gap-6">
                   <Icon classStyle={"lg:size-[53px] size-[39.57px]"} iconName={obj.iconName} />
@@ -47,8 +46,8 @@ const DigitalMarketing = () => {
                     </p>
                     <p
                       className={`font-normal text-custom-lg leading-5 font-maisonMono lg:max-w-[315px] ${index === 0 || index === 1
-                          ? "sm:pt-[22px] pt-[15px]"
-                          : "sm:pt-[42px] pt-[15px]"
+                        ? "sm:pt-[22px] pt-[15px]"
+                        : "sm:pt-[42px] pt-[15px]"
                         }`}
                     >
                       {obj.description}
@@ -65,12 +64,12 @@ const DigitalMarketing = () => {
                     </ul>
                     <button
                       className={`font-semibold text-custom-lg leading-5 text-nowrap max-w-[164px] flex gap-[6px] items-center transition-all duration-500 group ${index === 0
-                          ? "sm:pt-[42px] pt-8"
-                          : index === 1
+                        ? "sm:pt-[42px] pt-8"
+                        : index === 1
+                          ? "sm:pt-[24px] pt-8"
+                          : index === 3
                             ? "sm:pt-[24px] pt-8"
-                            : index === 3
-                              ? "sm:pt-[24px] pt-8"
-                              : "sm:pt-[42px] pt-8"
+                            : "sm:pt-[42px] pt-8"
                         }`}
                     >
                       {obj.buttonText}
@@ -86,7 +85,7 @@ const DigitalMarketing = () => {
               </div>
             ))}
           </div>
-          <div className="justify-center mt-12 max-sm:flex hidden">
+          <div className="justify-center mt-12 mb-9 max-sm:flex hidden">
             <button
               className="font-semibold text-custom-lg leading-custom-lg"
               onClick={() => setShowAll(!showAll)}>

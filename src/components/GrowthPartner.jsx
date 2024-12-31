@@ -10,7 +10,7 @@ const Tab = ({ activeTab }) => {
                 <div className="relative bg-cover bg-tab-one !max-w-[1280px] bg-center sm:px-20 sm:py-16 px-4 py-6 bg-no-repeat lg:h-[720px]">
                     <div className="lg:flex justify-between">
                         <div className="lg:w-4/12 w-full">
-                            <Heading classStyle={'text-white'} text={'The smartest minds in the industry'} />
+                            <Heading classStyle={'text-white uppercase'} text={'The smartest minds in the industry'} />
                             <p className="text-3xl leading-custom-6xl font-light font-maisonLight text-left text-white pb-8 max-sm:pb-4 max-sm:text-2xl pt-2">
                                 Answer our questions and listen to our answers.</p>
                             <p className="font-normal text-custom-lg leading-5 font-maisonMono text-left text-white pb-[98px] max-lg:pb-[57px] max-sm:text-xl max-w-[373px]">
@@ -24,11 +24,11 @@ const Tab = ({ activeTab }) => {
                             </div>
                         </div>
                         <div className="lg:w-2/12 w-full">
-                            <div className="flex lg:flex-col gap-5 sm:justify-between items-center max-sm:overflow-auto">
-                                <img src="/assets/images/webp/home-deploy-logo.webp" alt="Depot-Logo" className="max-w-[66px] lg:pb-20 pointer-events-none" />
-                                <img src="/assets/images/webp/ai-logo.webp" alt="ai-Logo" className="max-w-[66px] lg:pb-[62px] pointer-events-none" />
-                                <img src="/assets/images/webp/lowes-logo.webp" alt="Lowes-Logo" className="max-w-[92px] lg:pb-[10px] pointer-events-none" />
-                                <img src="/assets/images/webp/build-logo.webp" alt="Build-Logo" className="lg:max-w-[191px] max-w-[100px] lg:pb-[31.77px] pointer-events-none" />
+                            <div className="flex lg:flex-col gap-[10px] sm:justify-between items-center max-sm:overflow-auto">
+                                <img src="/assets/images/webp/home-deploy-logo.webp" alt="Depot-Logo" className="max-w-[66px] lg:pb-[70px] pointer-events-none" />
+                                <img src="/assets/images/webp/ai-logo.webp" alt="ai-Logo" className="max-w-[66px] lg:pb-[52px] pointer-events-none" />
+                                <img src="/assets/images/webp/lowes-logo.webp" alt="Lowes-Logo" className="max-w-[92px] pointer-events-none" />
+                                <img src="/assets/images/webp/build-logo.webp" alt="Build-Logo" className="lg:max-w-[191px] max-w-[100px] lg:pb-[21.77px] pointer-events-none" />
                                 <img src="/assets/images/webp/houzz-logo.webp" alt="Houzz-Logo" className="max-w-[117px] pointer-events-none" />
                             </div>
                         </div>
@@ -41,7 +41,7 @@ const Tab = ({ activeTab }) => {
         case "roi":
             return (
                 <div className="relative md:bg-tab-two bg-cover bg-no-repeat bg-center pt-[37px] md:pt-14 lg:pt-20 max-w-[1280px] h-[720px] max-md:bg-mobile-tab-two">
-                    <Heading classStyle={'text-white ps-[19px] md:ps-20'} text={'Proven Results'} />
+                    <Heading classStyle={'text-white ps-[19px] md:ps-20 uppercase'} text={'Proven Results'} />
                     <p className="text-3xl font-light font-maisonLight text-left text-white ps-[19px] md:ps-20">
                         Not hopes and prayers. </p>
                     <div className="md:block hidden lg:max-w-[293px] absolute yellow-circle bottom-0 xl:bottom-[10%] left-[-5%]">
@@ -90,9 +90,9 @@ const GrowthPartner = () => {
     }, [activeTab]);
 
     return (
-        <div className="py-14 flex justify-center relative">
+        <div className="sm:py-14 max-sm:pt-8 max-sm:pb-14 flex justify-center relative">
             <div className="container max-w-[1280px] mx-auto">
-                <Heading classStyle={'text-center'} text={'The Growth Partner'} />
+                <Heading classStyle={'text-center uppercase'} text={'The Growth Partner'} />
                 <p className="text-3xl font-light font-maisonLight text-center pb-[43px] max-sm:pb-[19px] max-sm:text-2xl">you’ve been looking for.</p>
                 <p className="text-custom-lg font-maisonMono font-normal text-center lg:pb-[105px] pb-16 max-sm:pb-[56px]">Businesses trust Venveo to power growth.</p>
                 <div className="nav-tabs">
@@ -118,7 +118,8 @@ const GrowthPartner = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 lg:bottom-7 -z-10 left-0 pointer-events-none"><img src="/assets/images/webp/tab-green-line.webp" alt="tab-line" className="w-full" /></div>
+            <div className="absolute bottom-0 sm:block hidden lg:bottom-7 -z-10 left-0 pointer-events-none"><img src="/assets/images/webp/tab-green-line.webp" alt="tab-line" className="w-full" /></div>
+            <div></div>
         </div>
     );
 };

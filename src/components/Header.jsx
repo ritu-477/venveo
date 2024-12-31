@@ -45,7 +45,6 @@ const Header = () => {
     }, [isMenuOpen]);
 
     useEffect(() => {
-        // Lock the page scroll when menu is open
         document.body.style.overflow = isMenuOpen ? 'hidden' : '';
     }, [isMenuOpen]);
 
@@ -55,15 +54,14 @@ const Header = () => {
                 <div className="flex justify-between items-center h-20 max-sm:h-[88px]">
                     <a href="/">
                         <img
-                            className="sm:max-w-[59.6px] lg:h-[90px] max-w-[42.38px] h-[64px] mt-4 sm:mt-[42px]"
+                            className="sm:max-w-[59.6px] lg:h-[90px] max-w-[42.38px] h-[64px] mt-4 lg:mt-[70px]"
                             src="/assets/images/webp/nav-logo.webp"
                             alt="nav-logo"
                         />
                     </a>
                     <div
                         className={`menuList ${isMenuOpen ? 'max-lg:left-0' : 'max-lg:left-[-100%]'
-                            } z-10 max-lg:w-full max-lg:fixed max-lg:justify-center max-lg:top-0 max-lg:bg-light-gray max-lg:flex-col max-lg:transition-all duration-800 flex items-center max-lg:min-h-screen`}
-                    >
+                            } z-10 max-lg:w-full max-lg:fixed max-lg:justify-center max-lg:top-0 max-lg:bg-light-gray max-lg:flex-col max-lg:transition-all duration-800 flex items-center max-lg:min-h-screen`}>
                         <div className="lg:flex-row flex flex-col">
                             <div className="lg:max-w-[800px] w-full lg:flex-row flex flex-col lg:bg-white lg:pr-[29.5px] lg:ps-[41.79px] lg:h-[80px] items-center max-lg:gap-6 lg:gap-[42px]">
                                 {NAV_ITEMS_LIST.map((item, index) => (

@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="bg-dark-green text-white pt-[57px] lg:pt-[90px] pb-[86px] lg:pb-[104px]">
       <div className="container max-w-[1353px] mx-auto grid grid-cols-1 xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 max-sm:gap-4">
-        {FOOTER_DATA.map((section, index) => (
+        {FOOTER_DATA.map((obj, index) => (
           <div
             key={index}
             className={`max-xl:pb-14 max-w-[169px] ${index === 3 ? 'xl:-ml-[75px]' : ''
@@ -16,10 +16,10 @@ function Footer() {
           >
             <ul className="space-y-2">
               <li className="font-medium text-xs leading-custom-md mb-4 uppercase">
-                {section.title}
+                {obj.title}
               </li>
-              {section.links.map((link, linkIndex) => (
-                <li key={linkIndex} className="font-maisonLight text-custom-xs leading-[30px]">
+              {obj.links.map((link, linkIndex) => (
+                <li key={linkIndex} className="font-maisonLight text-custom-lg text-nowrap leading-custom-6xl">
                   <a
                     className="relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500"
                     href={link.href}
@@ -40,25 +40,18 @@ function Footer() {
               placeholder="Enter Your Website"
               className="bg-transparent outline-none w-full placeholder:text-white text-white text-custom-lg font-normal leading-5 font-MaisonNeue"
               aria-label="Enter your website"
-              required
-            />
+              required/>
             <button
-              className="text-white text-custom-xs text-nowrap leading-5 font-semibold text-center font-maisonDemi hover:text-green transition-all duration-500"
-            >
+              className="text-white text-custom-xs text-nowrap leading-5 font-semibold text-center font-maisonDemi hover:text-green transition-all duration-500">
               Get Started
             </button>
           </form>
         </div>
       </div>
-
       <div className="container max-w-[1353px] pt-14 lg:pt-20 mx-auto flex flex-wrap justify-between items-center text-center sm:text-left">
         <div className="lg:w-1/3 md:w-1/2 w-full mb-6 sm:mb-0">
           <a href="#">
-            <img
-              src={logo.src}
-              alt={logo.alt}
-              className="mx-auto sm:mx-0 mb-[22px] max-w-[44.8px]"
-            />
+            <img src={logo.src} alt={logo.alt} className="mx-auto sm:mx-0 mb-[22px] max-w-[44.8px]"/>
           </a>
           <p className="text-custom-md leading-5 max-w-[315px] max-sm:text-center max-sm:mx-auto">
             {logo.description}
@@ -84,15 +77,13 @@ function Footer() {
             <a
               target="_blank"
               href={contact.email.link}
-              className="mt-2 text-custom-md leading-5 relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500"
-            >
+              className="mt-2 text-custom-md leading-5 relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500">
               {contact.email.text}
             </a>
             <a
               target="_blank"
               href={contact.phone.link}
-              className="pt-[21px] text-custom-md leading-5 relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500"
-            >
+              className="pt-[21px] text-custom-md leading-5 relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500">
               {contact.phone.text}
             </a>
           </div>
@@ -112,8 +103,7 @@ function Footer() {
                 href={link.url}
                 className="transition duration-700 hover:scale-105"
                 target="_blank"
-                rel="noopener noreferrer"
-              >
+                rel="noopener noreferrer">
                 <Icon iconName={link.name} />
               </a>
             ))}

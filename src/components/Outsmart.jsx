@@ -2,7 +2,7 @@ import React from 'react';
 
 const Outsmart = () => {
     return (
-        <div className="bg-outsmart mt-[63px] max-md:mt-12 max-sm:mt-6 bg-cover bg-no-repeat lg:bg-[100%_100%] bg-center pt-[60px] pb-20 xl:ps-[117.43px] xl:pr-[225.9px] max-sm:py-12 relative mb-14">
+        <div className="bg-outsmart mt-[63px] max-md:mt-12 max-sm:mt-6 bg-cover bg-no-repeat lg:bg-[100%_100%] bg-center pt-[60px] pb-20 xl:ps-[117.43px] xl:pr-[225.9px] max-sm:py-12 relative mb-8">
             <img
                 src="/assets/images/svg/outsmart-arrow.svg"
                 alt="arrow-image"

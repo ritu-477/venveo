@@ -8,7 +8,7 @@ const LearnFrom = () => {
             <img src="/assets/images/webp/yellow-learn-line.webp" alt="yellow-line"className="absolute top-[32%] xl:block hidden"/>
             <div className="md:container max-w-[1322px] mx-auto">
                 <div className="flex flex-col items-center md:pb-[52px] pb-10">
-                    <Heading classStyle={'sm:pb-[13px] pb-3'} text={'Learn from us.'} />
+                    <Heading classStyle={'sm:pb-[13px] pb-3 uppercase'} text={'Learn from us.'} />
                     <p className="text-custom-xs font-normal leading-none text-center sm:pb-9 pb-[33px] font-maisonMono">
                         Digital marketing resources from Venveo to help you grow.
                     </p>

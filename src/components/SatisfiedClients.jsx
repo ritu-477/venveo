@@ -9,7 +9,7 @@ import { SATISFIED_CLIENT_LIST } from '../utils/helper';
 
 const SatisfiedClients = () => {
   return (
-    <div className="lg:pt-[51px] md:pt-10 sm:pt-8 pt-[18px] lg:pb-[66px] md:pb-12 pb-8">
+    <div className="lg:pt-[51px] md:pt-10 sm:pt-8 pt-[18px] lg:pb-[66px] md:pb-12 pb-[41px]">
       <div className="max-w-[1920px] mx-auto">
         <div className="max-w-[586px] mx-auto">
           <p className="font-light sm:text-3xl sm:leading-custom-6xl text-2xl leading-custom-5xl text-center font-maisonLight pb-[7px]">
@@ -17,7 +17,7 @@ const SatisfiedClients = () => {
           <Heading text={'1,400+ SATISFIED CLIENTS.'} classStyle={'text-center'} />
           <img src="/assets/images/svg/red-line.svg" alt="red-line" className="lg:max-w-[119.62px] max-w-[84px] lg:ms-2 sm:ms-20 max-sm:-mt-[52px] ms-10" />
         </div>
-        <div className='xl:flex hidden justify-center gap-[60px] max-w-[1920px] mx-auto pt-[88px]'>
+        <div className='xl:flex hidden justify-center gap-[60px] max-w-[1920px] mx-auto pt-[66.5px]'>
           {SATISFIED_CLIENT_LIST.map((data, index) => (
             <div key={index}>
               <div className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_29px_33px_29px] max-w-[440px] h-full`}>
