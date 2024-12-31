@@ -68,7 +68,7 @@ const [showAll, setShowAll] = useState(false);
                       </div>
                   ))}
               </div>
-              <div className="justify-center mt-9 max-sm:flex hidden">
+              <div className="justify-center mt-9 max-sm:mb-7 max-sm:flex hidden">
                   <button
                       className="font-semibold text-custom-lg leading-custom-lg"
                       onClick={() => setShowAll(!showAll)}

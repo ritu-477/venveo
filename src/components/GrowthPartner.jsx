@@ -90,11 +90,11 @@ const GrowthPartner = () => {
     }, [activeTab]);
 
     return (
-        <div className="sm:py-14 max-sm:pt-8 max-sm:pb-14 flex justify-center relative">
+        <div className="sm:py-14 max-sm:pt-8 max-sm:pb-20 flex justify-center relative">
             <div className="container max-w-[1280px] mx-auto">
                 <Heading classStyle={'text-center uppercase'} text={'The Growth Partner'} />
-                <p className="text-3xl font-light font-maisonLight text-center pb-[43px] max-sm:pb-[19px] max-sm:text-2xl">you’ve been looking for.</p>
-                <p className="text-custom-lg font-maisonMono font-normal text-center lg:pb-[105px] pb-16 max-sm:pb-[56px]">Businesses trust Venveo to power growth.</p>
+                <p className="text-3xl font-light font-maisonLight text-center sm:pb-8 lg:pb-[43px] max-sm:pb-[19px] max-sm:text-2xl">you’ve been looking for.</p>
+                <p className="text-custom-lg font-maisonMono font-normal text-center lg:pb-[105px] max-lg:pb-[56px]">Businesses trust Venveo to power growth.</p>
                 <div className="nav-tabs">
                     <div className="flex justify-center gap-20 max-sm:gap-10 pb-14 tab-list max-sm:overflow-auto">
                         {TABS_DATA.map((tab) => (
@@ -119,7 +119,7 @@ const GrowthPartner = () => {
                 </div>
             </div>
             <div className="absolute bottom-0 sm:block hidden lg:bottom-7 -z-10 left-0 pointer-events-none"><img src="/assets/images/webp/tab-green-line.webp" alt="tab-line" className="w-full" /></div>
-            <div></div>
+            <div className="absolute bottom-0 block sm:hidden lg:bottom-7 -z-10 left-0 pointer-events-none"><img src="/assets/images/webp/mobile-line-green.webp" alt="mobile-green-line" /></div>
         </div>
     );
 };
