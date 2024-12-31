@@ -10,6 +10,7 @@ import MarketingCards from './components/MarketingCards';
 import Ready from './components/Ready';
 import LearnFrom from './components/LearnFrom';
 import Footer from './components/Footer';
+import BackToTop from './components/BackToTop';
 
 function App() {
   return (
@@ -24,7 +25,8 @@ function App() {
       <LearnFrom/>
       <MarketingCards />
       <Ready />
-      <Footer/>
+      <Footer />
+      <BackToTop/>
     </>
   );
 }
