@@ -14,8 +14,8 @@ function Footer() {
             className={`max-xl:pb-14 max-w-[169px] ${index === 3 ? 'xl:-ml-[75px]' : ''
               }`}
           >
-            <ul className="space-y-2">
-              <li className="font-medium text-xs leading-custom-md mb-4 uppercase">
+            <ul>
+              <li className="font-medium text-xs leading-custom-md mb-6 uppercase">
                 {obj.title}
               </li>
               {obj.links.map((link, linkIndex) => (
