@@ -23,7 +23,7 @@ const LearnFrom = () => {
                 <div className="relative">
                     <img src="/assets/images/webp/learn-from-image.webp" alt="learn-from-image" className="md:block hidden" />
                     <img className="max-md:block hidden" src="/assets/images/webp/mobile-learn-from.webp" alt="learn-from" />
-                    <div className="bg-white sm:p-[35px_28px_31px_29px] absolute bottom-[6%] left-[6%] max-md:left-[5%] rounded-[25px] max-lg:pt-[30px] max-lg:pb-[26px] max-lg:px-[26px] max-lg:max-w-[339px]">
+                    <div className="bg-white sm:p-[35px_28px_31px_29px] absolute bottom-[6%] left-[2%] max-md:left-[5%] rounded-[25px] max-lg:pt-[30px] max-lg:pb-[26px] max-lg:px-[26px] max-lg:max-w-[339px]">
                         <p className="text-custom-lg font-semibold leading-none text-left text-aqua-green sm:pb-4 pb-[6px] font-MaisonNeue uppercase">
                             Guides
                         </p>
