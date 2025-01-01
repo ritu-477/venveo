@@ -9,11 +9,11 @@ const Header = () => {
     const dropdownRefs = useRef([]);
 
     const toggleMenu = () => {
-        setIsMenuOpen((prevState) => !prevState);
+        setIsMenuOpen(!isMenuOpen);
     };
 
     const toggleDropdown = (index) => {
-        setActiveDropdown((prevIndex) => (prevIndex === index ? null : index));
+        setActiveDropdown(activeDropdown === index ? null : index);
     };
 
     const handleClickOutside = (event) => {
@@ -56,8 +56,7 @@ const Header = () => {
                         <img
                             className="sm:max-w-[59.6px] lg:h-[90px] max-w-[42.38px] h-[64px] mt-4 lg:mt-[70px]"
                             src="/assets/images/webp/nav-logo.webp"
-                            alt="nav-logo"
-                        />
+                            alt="nav-logo" />
                     </a>
                     <div
                         className={`menuList ${isMenuOpen ? 'max-lg:left-0' : 'max-lg:left-[-100%]'
@@ -68,24 +67,17 @@ const Header = () => {
                                     <div
                                         key={index}
                                         className="relative group"
-                                        ref={(el) => (dropdownRefs.current[index] = el)}
-                                    >
+                                        ref={(el) => (dropdownRefs.current[index] = el)}>
                                         <a
                                             href="#"
                                             onClick={(e) => {
                                                 e.preventDefault();
                                                 toggleDropdown(index);
                                             }}
-                                            className="flex font-medium items-center gap-1 text-custom-lg leading-5 hover:text-dark-green transition-all duration-700"
-                                        >
+                                            className="flex font-medium items-center gap-1 text-custom-lg leading-5 hover:text-dark-green transition-all duration-700">
                                             {item.list}
                                             <span
-                                                className={`transition-transform duration-500 mt-[7px] text-center text-custom-sm leading-custom-sm ${activeDropdown === index ? 'rotate-180' : ''
-                                                    }`}
-                                            >
-                                                ▼
-                                            </span>
-                                        </a>
+                                                className={`transition-transform duration-500 mt-[7px] text-center text-custom-sm leading-custom-sm ${activeDropdown === index ? 'rotate-180' : ''}`}>▼</span></a>
                                         {activeDropdown === index && (
                                             <ul className="absolute top-full left-0 bg-white shadow-md p-2 mt-2 rounded z-10">
                                                 {item.data.map((data, idx) => (
@@ -107,8 +99,7 @@ const Header = () => {
                     </div>
                     <div
                         onClick={toggleMenu}
-                        className={`menuIcon pt-3 mr-4 relative max-lg:w-8 max-lg:h-10 z-[15] max-lg:flex max-lg:justify-center gap-3 max-lg:flex-col max-lg:cursor-pointer transition ease-linear duration-300 lg:hidden items-center ${isMenuOpen ? 'fixed top-3 left-3' : ''}`}
-                    >
+                        className={`menuIcon pt-3 mr-4 relative max-lg:w-8 max-lg:h-10 z-[15] max-lg:flex max-lg:justify-center gap-3 max-lg:flex-col max-lg:cursor-pointer transition ease-linear duration-300 lg:hidden items-center ${isMenuOpen ? 'fixed top-3 left-3' : ''}`}>
                         {isMenuOpen ? (
                             <>
                                 <span className="h-[2px] mt-3 rounded-full absolute top-3 w-full bg-white transform rotate-45 transition duration-300"></span>

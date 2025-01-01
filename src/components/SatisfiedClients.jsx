@@ -38,7 +38,7 @@ const SatisfiedClients = () => {
                     <Icon classStyle={'group-hover:translate-x-1 transition-all duration-500'} iconName={'arrowIcon'} />
                   </button>
                 </div>
-                <div className="flex gap-[46px] md:gap-[62px] pt-[13px]">
+                <div className="flex gap-[46px] justify-center md:gap-[62px] pt-[13px]">
                   {data.stats.map((stat, i) => (
                     <div key={i} className="flex flex-col">
                       <p className="font-bold font-testSöhneSchmal sm:text-custom-3xl leading-custom-8xl text-custom-2xl">

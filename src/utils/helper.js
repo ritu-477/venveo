@@ -166,7 +166,6 @@ export const ACTUAL_RESULTS = [
 
 ];
 
-
 export const MARKETING_DATA = [
     {
         title: "multi-channel marketing",
@@ -233,6 +232,7 @@ export const FOOTER_DATA = [
             { text: "Track Results", href: "/" },
         ],
     },
+
     {
         title: "WHO WE HELP",
         links: [
@@ -243,6 +243,7 @@ export const FOOTER_DATA = [
             { text: "Email Marketing", href: "/" },
         ],
     },
+
     {
         title: "WHY VENveo",
         links: [
@@ -252,6 +253,7 @@ export const FOOTER_DATA = [
             { text: "Testimonials", href: "/" },
         ],
     },
+    
     {
         title: "RESOURCES",
         links: [
