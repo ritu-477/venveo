@@ -62,7 +62,7 @@ function Footer() {
         </div>
         <div className="lg:w-1/3 md:w-1/2 w-full flex gap-8 md:gap-14 max-sm:justify-center lg:justify-center max-md:mt-5">
           <div className="flex flex-col">
-            <p className="font-medium text-xs leading-custom-md">{visit.title}</p>
+            <p className="font-medium text-xs leading-custom-md pb-4 lg:pb-[30px]">{visit.title}</p>
             <a target="_blank" href={visit.link} className="mt-2 text-custom-md leading-5">
               {visit.address.split("\n").map((line, index) => (
                 <React.Fragment key={index}>
@@ -73,7 +73,7 @@ function Footer() {
             </a>
           </div>
           <div className="flex flex-col">
-            <p className="font-medium">{contact.title}</p>
+            <p className="font-medium pb-4 lg:pb-[30px]">{contact.title}</p>
             <a
               target="_blank"
               href={contact.email.link}
