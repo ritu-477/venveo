@@ -4,7 +4,7 @@ import Icon from "../utils/icons";
 
 function Footer() {
   const { logo, visit, contact, socialLinks, footerPolicies } = FOOTER_LIST;
-  
+
   return (
     <footer className="bg-dark-green text-white pt-[57px] lg:pt-[90px] pb-[86px] lg:pb-[104px]">
       <div className="container max-w-[1353px] mx-auto grid grid-cols-1 xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 max-sm:gap-4">
@@ -22,7 +22,7 @@ function Footer() {
                 <li key={linkIndex} className="font-maisonLight text-custom-lg text-nowrap leading-custom-6xl">
                   <a
                     className="relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500"
-                    href={link.href}
+                    href={link.href} target="_blank"
                   >
                     {link.text}
                   </a>
