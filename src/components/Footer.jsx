@@ -100,8 +100,8 @@ function Footer() {
             {socialLinks.map((link, index) => (
               <a
                 key={index}
-                href={link.url}
-                className="transition duration-700 hover:scale-105"
+                href={link.link}
+                className="transition duration-700 hover:scale-110"
                 target="_blank"
                 rel="noopener noreferrer">
                 <Icon iconName={link.name} />

@@ -9,7 +9,7 @@ import { ACTUAL_RESULTS } from '../utils/helper';
 const ActualResults = () => {
     return (
         <div className="bg-actual bg-no-repeat bg-center bg-cover text-white pt-[67px] lg:pt-[119px] pb-6 sm:pb-8 mt-10 relative mb-14 ov">
-            <div className='max-w-[1920px] mx-auto 2xl:container relative'>
+            <div className='max-w-[1920px] mx-auto container relative'>
                 <p className="font-maisonLight max-sm:px-4 font-light text-3xl leading-custom-6xl text-white text-center">
                     Actual businesses.
                 </p>
@@ -25,7 +25,7 @@ const ActualResults = () => {
                 </div>
                 <div className="swiper-button-next absolute !right-0 !lg:right-6 top-[50%] transform translate-y-[170%] sm:-translate-y-[238%]">
                     <button className="bg-white rounded-l-[25px] flex items-center justify-center">
-                        <img alt="next-btn" className="sm:my-14 sm:mx-8 my-10 mx-6" src="/assets/images/svg/next-button.svg" />
+                        <img alt="next-btn" className="sm:my-14 sm:mx-8 my-10 mx-7" src="/assets/images/svg/next-button.svg" />
                     </button>
                 </div>
                 <Swiper
@@ -55,7 +55,7 @@ const ActualResults = () => {
                                     alt="Thumbnail"
                                     className="!max-w-[640px] thumbnail-image pointer-events-none w-full mx-auto object-cover rounded transition-all duration-300 ease-in-out"
                                 />
-                                <p className="mt-[30px] text-2xl leading-custom-5xl sm:text-3xl sm:leading-custom-7xl font-light font-maisonLight max-w-[251px] sm:max-w-[640px] md:mt-[74px] mx-auto">
+                                <p className="mt-[30px] text-2xl slider-text leading-custom-5xl sm:text-3xl sm:leading-custom-7xl font-light font-maisonLight max-w-[251px] sm:max-w-[640px] md:mt-[74px] mx-auto">
                                     "{obj.description}"
                                 </p>
                                 <p className="mt-[23px] max-sm:px-4 text-[15px] leading-[20px] font-maisonMono font-normal">

@@ -3,28 +3,3 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (min-width:640px) and (max-width:1389.99px) {
-    .yellow-circle {
-        left: 0 !important;
-        max-width: 220px;
-    }
-
-    .green-circle {
-        right: 0 !important;
-        max-width: 150px;
-    }
-}
-
-@media (min-width:1390px) {
-    .yellow-circle {
-        left: -5% !important;
-    }
-
-    .green-circle {
-        right: -5% !important;
-    }
-
-    .swiper-button-next {
-        right: 18px !important;
-    }
-}

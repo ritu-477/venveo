@@ -293,11 +293,11 @@ export const FOOTER_LIST = {
     },
 
     socialLinks: [
-        { name: "facebook", url: "https://facebook.com" },
-        { name: "instagram", url: "https://instagram.com" },
-        { name: "twitter", url: "https://twitter.com" },
-        { name: "linkedin", url: "https://linkedin.com" },
-        { name: "youtube", url: "https://youtube.com" },
+        { name: "facebook", link: "https://facebook.com" },
+        { name: "instagram", link: "https://instagram.com" },
+        { name: "twitter", link: "https://twitter.com" },
+        { name: "linkedin", link: "https://linkedin.com" },
+        { name: "youtube", link: "https://youtube.com" },
     ],
     
     footerPolicies: ["All Rights Reserved", "Privacy Policy"],

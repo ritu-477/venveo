@@ -10,11 +10,11 @@ import MarketingCards from './components/MarketingCards';
 import Ready from './components/Ready';
 import LearnFrom from './components/LearnFrom';
 import Footer from './components/Footer';
-import BackToTop from './components/BackToTop';
+import BackToTop from './common/BackToTop';
 
 function App() {
   return (
-    <> 
+    <>
       <Hero />
       <Featured />
       <SatisfiedClients />
@@ -22,11 +22,11 @@ function App() {
       <Outsmart />
       <GrowthPartner />
       <ActualResults />
-      <LearnFrom/>
+      <LearnFrom />
       <MarketingCards />
       <Ready />
       <Footer />
-      <BackToTop/>
+      <BackToTop />
     </>
   );
 }

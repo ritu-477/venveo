@@ -7,7 +7,7 @@ const Outsmart = () => {
                 <img
                     src="/assets/images/svg/outsmart-arrow.svg"
                     alt="arrow-image"
-                    className="absolute pointer-events-none 2xl:left-[34rem] xl:left-[33rem] lg:left-[28rem] xl:block hidden xl:top-[3.5rem] lg:top-[9rem] top-[11rem] sm:left-[26rem] left-[4rem] sm:top-[8rem]" />
+                    className="absolute pointer-events-none 2xl:left-[34rem] xl:left-[33rem] xl:block hidden xl:top-[3.5rem]" />
                 <div className="md:flex justify-between items-center max-lg:flex-col">
                     <div className="flex-col">
                         <p className="text-custom-xs font-space font-normal leading-6 text-left pb-2 font-Mono max-lg:text-center">
@@ -17,7 +17,7 @@ const Outsmart = () => {
                             Outsmart your competition
                         </p>
                     </div>
-                    <form className="bg-white  max-lg:mt-5 text-white justify-between rounded-[50px] text-center py-4 sm:py-5 px-7 flex max-w-[448px] w-full lg:ml-auto max-lg:mx-auto">
+                    <form className="bg-white  max-lg:mt-5 text-white justify-between rounded-[50px] text-center py-4 sm:py-5 px-7 flex max-w-[448px] w-full max-lg:mx-auto">
                         <input
                             id="email"
                             type="text"
