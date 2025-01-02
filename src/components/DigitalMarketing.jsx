@@ -32,7 +32,7 @@ const DigitalMarketing = () => {
       /> 
       <div className="container">
         <div className="sm:pt-[83px] pt-[33px] max-w-[1072px] mx-auto">
-          <div className="grid lg:grid-cols-2 lg:gap-x-[66px] gap-y-10 justify-center w-full">
+          <div className="grid lg:grid-cols-2 lg:gap-x-[66px] gap-y-10 lg:gap-y-14 justify-center w-full">
             {DIGITAL_MARKETING_LIST.map((obj, index) => (
               <div
                 key={index}

@@ -225,43 +225,43 @@ export const FOOTER_DATA = [
     {
         title: "HOW WE HELP",
         links: [
-            { text: "Drive More Awareness", href: "/" },
-            { text: "Get More Customers", href: "/" },
-            { text: "Build Your Brand", href: "/" },
-            { text: "Improve your reputation", href: "/" },
-            { text: "Track Results", href: "/" },
+            { text: "Drive More Awareness", href: "#drive" },
+            { text: "Get More Customers", href: "get" },
+            { text: "Build Your Brand", href: "#build" },
+            { text: "Improve your reputation", href: "#improve" },
+            { text: "Track Results", href: "#track" },
         ],
     },
 
     {
         title: "WHO WE HELP",
         links: [
-            { text: "Digital Advertising", href: "/" },
-            { text: "Search Engine Ranking", href: "/" },
-            { text: "Content Marketing", href: "/" },
-            { text: "Programic Advertising", href: "/" },
-            { text: "Email Marketing", href: "/" },
+            { text: "Digital Advertising", href: "#digital" },
+            { text: "Search Engine Ranking", href: "#search" },
+            { text: "Content Marketing", href: "content" },
+            { text: "Programic Advertising", href: "#programic" },
+            { text: "Email Marketing", href: "#email" },
         ],
     },
 
     {
         title: "WHY VENveo",
         links: [
-            { text: "About Us", href: "/" },
-            { text: "Careers", href: "/" },
-            { text: "Growth Studies", href: "/" },
-            { text: "Testimonials", href: "/" },
+            { text: "About Us", href: "#about" },
+            { text: "Careers", href: "#careers" },
+            { text: "Growth Studies", href: "#growth" },
+            { text: "Testimonials", href: "#testimonials" },
         ],
     },
     
     {
         title: "RESOURCES",
         links: [
-            { text: "Articles", href: "/" },
-            { text: "News", href: "/" },
-            { text: "Webinars", href: "/" },
-            { text: "EBooks", href: "/" },
-            { text: "Podcast", href: "/" },
+            { text: "Articles", href: "#articles" },
+            { text: "News", href: "#news" },
+            { text: "Webinars", href: "#webinars" },
+            { text: "EBooks", href: "#books" },
+            { text: "Podcast", href: "#podcast" },
         ],
     },
 ];
@@ -288,7 +288,7 @@ export const FOOTER_LIST = {
         },
         phone: {
             text: "1 · 800 · 123 · 4567",
-            link: "/",
+            link: "tel:18001234567",
         },
     },
 

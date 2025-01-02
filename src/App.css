@@ -82,6 +82,26 @@ body {
     opacity: 1;
 }
 
+.custom-pagination .custom-bullet {
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 9999px !important;
+    background: #097980 !important;
+    margin: 0 4px;
+    display: block;
+    transition: 0.3s;
+}
+
+.custom-pagination .swiper-pagination-bullet-active {
+    background-color: transparent !important;
+    width: 14px !important;
+    height: 14px !important;
+    background: #00AFB5 !important;
+    border-radius: 8px;
+    display: block;
+    opacity: 1 !important;
+}
+
 @media (min-width:640px) {
 
     .swiper-button-prev,

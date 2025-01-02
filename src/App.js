@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 import Featured from './components/Featured';
 import SatisfiedClients from './components/SatisfiedClients';
 import DigitalMarketing from './components/DigitalMarketing';
-import Outsmart from './components/Outsmart';
+import OutSmart from './components/OutSmart';
 import GrowthPartner from './components/GrowthPartner';
 import ActualResults from './components/ActualResults';
 import MarketingCards from './components/MarketingCards';
@@ -19,7 +19,7 @@ function App() {
       <Featured />
       <SatisfiedClients />
       <DigitalMarketing />
-      <Outsmart />
+      <OutSmart />
       <GrowthPartner />
       <ActualResults />
       <LearnFrom />

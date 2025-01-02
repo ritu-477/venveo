@@ -19,11 +19,10 @@ function Footer() {
                 {obj.title}
               </li>
               {obj.links.map((link, linkIndex) => (
-                <li key={linkIndex} className="font-maisonLight text-custom-lg text-nowrap leading-custom-6xl">
+                <li key={linkIndex}>
                   <a
-                    className="relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500"
-                    href={link.href} target="_blank"
-                  >
+                    className="font-maisonLight text-custom-lg text-nowrap leading-custom-6xl hover:text-green transition-all duration-500"
+                    href={link.href} target="_blank">
                     {link.text}
                   </a>
                 </li>
@@ -36,7 +35,7 @@ function Footer() {
           <form className="border-2 border-white mt-[30px] text-white rounded-[50px] text-center py-4 sm:py-5 px-5 xl:px-7 flex w-full xl:max-w-[448px] sm:mx-auto justify-between">
             <input
               id="email"
-              type="text"
+              type="email"
               placeholder="Enter Your Email"
               className="bg-transparent outline-none w-full placeholder:text-white text-white text-custom-lg font-normal leading-5 font-MaisonNeue"
               aria-label="Enter Your Email"
@@ -77,13 +76,13 @@ function Footer() {
             <a
               target="_blank"
               href={contact.email.link}
-              className="text-custom-md leading-5 relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500">
+              className="text-custom-md leading-5 font-normal border-b border-green w-full max-w-[104px]">
               {contact.email.text}
             </a>
             <a
               target="_blank"
               href={contact.phone.link}
-              className="pt-[21px] text-custom-md leading-5 relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500">
+              className="pt-[21px] text-nowrap font-normal text-custom-md leading-5 border-b border-green w-full max-w-[112px]">
               {contact.phone.text}
             </a>
           </div>
@@ -91,9 +90,9 @@ function Footer() {
         <div className="lg:w-1/3 md:w-1/2 w-full mt-6 lg:mt-0">
           <div className="flex max-sm:justify-center lg:justify-end space-x-4">
             {footerPolicies.map((policy, index) => (
-              <p key={index} className="text-custom-md">
+              <a href="/" target="_blank" key={index} className="text-custom-md font-medium leading-5 font-maisonMedium">
                 {policy}
-              </p>
+              </a>
             ))}
           </div>
           <div className="flex max-sm:justify-center items-center lg:justify-end space-x-[34px] pt-[31px]">

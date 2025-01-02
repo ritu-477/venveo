@@ -94,7 +94,7 @@ const Header = () => {
                                 ))}
                                 <Icon classStyle={'cursor-pointer'} iconName={'searchIcon'} />
                             </div>
-                            <CustomButton classStyle="text-nowrap max-lg:mt-6" text="Let’s Talk" />
+                            <CustomButton classStyle="text-nowrap max-lg:mt-6 hover:bg-light-green transition-all duration-500" text="Let’s Talk" />
                         </div>
                     </div>
                     <div

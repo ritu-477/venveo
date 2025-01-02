@@ -7,7 +7,7 @@ const Tab = ({ activeTab }) => {
     switch (activeTab) {
         case "industry":
             return (
-                <div className="relative bg-cover bg-tab-one !max-w-[1280px] bg-center sm:px-20 sm:py-16 px-4 py-6 bg-no-repeat lg:h-[720px]">
+                <div className="relative bg-cover bg-tab-one !max-w-[1280px] bg-center sm:px-12 xl:ps-[76px] xl:pe-[60px] sm:py-16 px-4 py-6 bg-no-repeat lg:h-[720px]">
                     <div className="lg:flex justify-between">
                         <div className="lg:w-4/12 w-full">
                             <Heading classStyle={'text-white uppercase'} text={'The smartest minds in the industry'} />
@@ -32,8 +32,8 @@ const Tab = ({ activeTab }) => {
                                 <img src="/assets/images/webp/houzz-logo.webp" alt="Houzz-Logo" className="max-w-[117px] pointer-events-none" />
                             </div>
                         </div>
-                        <div className="lg:w-5/12 w-full max-lg:mt-5">
-                            <img className="lg:h-[573px] w-full" src="./assets/images/webp/tab-card-image.webp" alt="tab-card" />
+                        <div className="lg:w-5/12 w-full max-lg:mt-5 flex lg:justify-end">
+                            <img className="lg:h-[573px] lg:max-w-[440px] w-full" src="./assets/images/webp/tab-card-image.webp" alt="tab-card" />
                         </div>
                     </div>
                 </div>
@@ -94,9 +94,9 @@ const GrowthPartner = () => {
             <div className="container max-w-[1280px] mx-auto">
                 <Heading classStyle={'text-center uppercase'} text={'The Growth Partner'} />
                 <p className="text-3xl font-light font-maisonLight text-center sm:pb-8 lg:pb-[43px] max-sm:pb-[19px] max-sm:text-2xl">you’ve been looking for.</p>
-                <p className="text-custom-lg font-maisonMono font-normal text-center lg:pb-[105px] max-lg:pb-[56px]">Businesses trust Venveo to power grow.</p>
+                <p className="text-custom-lg font-maisonMono font-normal text-center max-sm:max-w-[291px] mx-auto lg:pb-[105px] max-lg:pb-[56px]">Businesses trust Venveo to power grow.</p>
                 <div className="nav-tabs">
-                    <div className="flex justify-center gap-20 max-sm:gap-10 pb-14 tab-list max-sm:overflow-auto">
+                    <div className="flex sm:justify-center gap-20 max-sm:gap-10 pb-12 tab-list max-sm:overflow-auto w-full">
                         {TABS_DATA.map((tab) => (
                             <button
                                 key={tab.id}
@@ -106,7 +106,7 @@ const GrowthPartner = () => {
                                 {tab.label}
                                 {activeTab === tab.id && (
                                     <img
-                                        className="absolute top-full max-w-[155px] sm:max-w-[183.85px] left-1/2 transform -translate-x-1/2"
+                                        className="absolute top-full max-w-[155.12px] left-1/2 transform -translate-x-1/2"
                                         alt="active-line"
                                         src="./assets/images/webp/tab-active-line.webp" />
                                 )}

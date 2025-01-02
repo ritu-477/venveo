@@ -11,7 +11,7 @@ const Ready = () => {
                         Ready to hit your goals?
                     </p>
                     <div className="flex max-lg:mx-auto justify-center max-sm:w-full">
-                        <CustomButton classStyle={'!py-[31px] !px-[31.9px] max-sm:w-full max-sm:flex max-sm:items-center max-sm:justify-center'} text={'Book a Strategy Call'} />
+                        <CustomButton classStyle={'!py-[31px] !px-[31.9px] max-sm:w-full transition duration-700 max-sm:flex max-sm:items-center max-sm:justify-center'} text={'Book a Strategy Call'} />
                     </div>
                 </div>
             </div>

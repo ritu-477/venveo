@@ -3,10 +3,8 @@ import Heading from '../common/Heading';
 import Icon from '../utils/icons';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import { SATISFIED_CLIENT_LIST } from '../utils/helper';
-import { Autoplay } from 'swiper/modules'; 
+import { Autoplay, Pagination } from 'swiper/modules'; 
 import 'swiper/css/autoplay'; 
 
 const SatisfiedClients = () => {
@@ -21,18 +19,18 @@ const SatisfiedClients = () => {
           <img
             src="/assets/images/svg/red-line.svg"
             alt="red-line"
-            className="lg:max-w-[119.62px] max-w-[84px] lg:ms-2 sm:ms-20 max-sm:-mt-[52px] ms-10"
+            className="lg:max-w-[119.62px] max-w-[84px] lg:ms-18 xl:ms-2 sm:ms-20 max-sm:-mt-[52px] ms-10"
           />
         </div>
         <div className="xl:flex hidden justify-center gap-[60px] max-w-[1920px] mx-auto pt-[66.5px]">
           {SATISFIED_CLIENT_LIST.map((data, index) => (
             <div key={index}>
               <div
-                className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_29px_33px_29px] max-w-[440px] h-full`}
+                className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_29px_33px_29px] max-w-[440px] h-full group`}
               >
                 <div className="max-w-[382px] p-[38px_24px_31px_24px] bg-white rounded-[25px]">
                   {data.title && (
-                    <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 group hover:bg-black transition-all duration-500">
+                    <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 group-hover:bg-black transition-all duration-500">
                       <p className="text-xs group-hover:text-white text-black leading-5 font-semibold font-maisonMedium transition-all duration-500">
                         {data.title}
                       </p>
@@ -85,22 +83,28 @@ const SatisfiedClients = () => {
               delay: 3000, 
               disableOnInteraction: false, 
             }}
+            pagination={{
+              el: '.custom-pagination',
+              clickable: true,
+              renderBullet: (index, className) =>
+                `<span class="${className} custom-bullet"></span>`,
+            }}
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 2 },
               1280: { slidesPerView: 3 },
             }}
-            modules={[Autoplay]} 
+            modules={[Autoplay, Pagination]} 
           >
             {SATISFIED_CLIENT_LIST.map((data, index) => (
               <SwiperSlide key={index}>
                 <div
-                  className={`${data.bgClass} bg-cover bg-no-repeat bg-center p-[35px_20px_33px_20px] w-full xl:max-w-[440px] h-full`}
+                  className={`${data.bgClass} bg-cover bg-no-repeat group bg-center p-[35px_20px_33px_20px] w-full xl:max-w-[440px] h-full`}
                 >
                   <div className="xl:max-w-[382px] p-[38px_20px_32px_22px] bg-white rounded-[25px]">
                     {data.title && (
-                      <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 group hover:bg-black transition-all duration-500">
+                      <div className="-mt-[55px] -ms-1 rounded-full py-[9px] max-w-[165px] px-3 group-hover:bg-black transition-all duration-500">
                         <p className="text-xs group-hover:text-white text-black leading-5 font-semibold font-maisonMedium transition-all duration-500">
                           {data.title}
                         </p>
@@ -146,6 +150,9 @@ const SatisfiedClients = () => {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className='mt-6 lg:mt-8'>
+            <div className="custom-pagination flex justify-center"></div>
+          </div>
         </div>
       </div>
     </div>

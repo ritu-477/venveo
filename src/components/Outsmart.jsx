@@ -2,12 +2,12 @@ import React from 'react';
 
 const Outsmart = () => {
     return (
-        <div className="bg-outsmart lg:mt-[63px] max-md:mt-12 max-sm:mt-6 bg-cover bg-no-repeat lg:bg-[100%_100%] bg-center pt-[60px] pb-20 xl:ps-[117.43px] xl:pr-[225.9px] max-sm:py-12 mb-8">
+        <div className="bg-outsmart lg:mt-[63px] max-md:mt-12 max-sm:mt-6 bg-cover bg-no-repeat lg:bg-[100%_100%] bg-center pt-[60px] pb-20 xl:ps-[117.43px] xl:pr-[225.9px] max-sm:py-12 mb-8 lg:mb-[57px]">
             <div className="container relative max-w-[1136.68px]">
                 <img
                     src="/assets/images/svg/outsmart-arrow.svg"
                     alt="arrow-image"
-                    className="absolute pointer-events-none 2xl:left-[34rem] xl:left-[33rem] xl:block hidden xl:top-[3.5rem]" />
+                    className="absolute pointer-events-none 2xl:left-[34rem] xl:left-[33rem] xl:block hidden xl:top-[3.5rem]"/>
                 <div className="md:flex justify-between items-center max-lg:flex-col">
                     <div className="flex-col">
                         <p className="text-custom-xs font-space font-normal leading-6 text-left pb-2 font-Mono max-lg:text-center">
