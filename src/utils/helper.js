@@ -271,7 +271,7 @@ export const FOOTER_LIST = {
         src: "/assets/images/webp/footer-logo.webp",
         alt: "footer-logo",
         description: "Venveo is an award-winning digital marketing solutions provider.",
-        copyright: "©2024 Venveo",
+        copyright: "©2025 Venveo",
     },
 
     visit: {

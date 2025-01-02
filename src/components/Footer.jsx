@@ -4,7 +4,7 @@ import Icon from "../utils/icons";
 
 function Footer() {
   const { logo, visit, contact, socialLinks, footerPolicies } = FOOTER_LIST;
-
+  
   return (
     <footer className="bg-dark-green text-white pt-[57px] lg:pt-[90px] pb-[86px] lg:pb-[104px]">
       <div className="container max-w-[1353px] mx-auto grid grid-cols-1 xl:grid-cols-5 lg:grid-cols-3 md:grid-cols-2 max-sm:gap-4">
@@ -31,7 +31,7 @@ function Footer() {
             </ul>
           </div>
         ))}
-        <div className="text-center md:text-left xl:-ml-[195px]">
+        <div className="text-center md:text-left xl:-ml-[180px]">
           <p className="mb-4 text-3xl font-maisonLight">Get weekly data — and insights.</p>
           <form className="border-2 border-white mt-[30px] text-white rounded-[50px] text-center py-4 sm:py-5 px-5 xl:px-7 flex w-full xl:max-w-[448px] sm:mx-auto justify-between">
             <input
@@ -63,7 +63,7 @@ function Footer() {
         <div className="lg:w-1/3 md:w-1/2 w-full flex gap-8 md:gap-14 max-sm:justify-center lg:justify-center max-md:mt-5">
           <div className="flex flex-col">
             <p className="font-medium text-xs leading-custom-md pb-4 lg:pb-[30px]">{visit.title}</p>
-            <a target="_blank" href={visit.link} className="mt-2 text-custom-md leading-5">
+            <a target="_blank" href={visit.link} className="text-custom-md leading-5 max-w-[228px]">
               {visit.address.split("\n").map((line, index) => (
                 <React.Fragment key={index}>
                   {line}
@@ -73,11 +73,11 @@ function Footer() {
             </a>
           </div>
           <div className="flex flex-col">
-            <p className="font-medium pb-4 lg:pb-[30px]">{contact.title}</p>
+            <p className="font-medium pb-4 text-xs leading-custom-md lg:pb-[30px]">{contact.title}</p>
             <a
               target="_blank"
               href={contact.email.link}
-              className="mt-2 text-custom-md leading-5 relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500">
+              className="text-custom-md leading-5 relative after:absolute hover:after:bg-green hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[1px] after:left-0 hover:after:bottom-[-3px] after:ease-in-out after:duration-500">
               {contact.email.text}
             </a>
             <a
