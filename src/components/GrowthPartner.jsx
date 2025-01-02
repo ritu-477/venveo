@@ -118,7 +118,7 @@ const GrowthPartner = () => {
                     </div>
                 </div>
             </div>
-            <div className="absolute bottom-0 sm:block hidden lg:bottom-7 -z-10 left-0 pointer-events-none"><img src="/assets/images/webp/tab-green-line.webp" alt="tab-line" className="w-full" /></div>
+            <div className="absolute bottom-0 sm:block hidden lg:bottom-7 -z-10 left-0 pointer-events-none w-full"><img src="/assets/images/webp/tab-green-line.webp" alt="tab-line" className="w-full" /></div>
             <div className="absolute bottom-0 block sm:hidden lg:bottom-7 -z-10 left-0 pointer-events-none"><img src="/assets/images/webp/mobile-line-green.webp" alt="mobile-green-line" /></div>
         </div>
     );

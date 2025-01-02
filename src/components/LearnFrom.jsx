@@ -5,7 +5,7 @@ import Icon from "../utils/icons";
 const LearnFrom = () => {
     return (
         <div className="relative sm:pt-12 pb-8 pt-4">
-            <img src="/assets/images/webp/yellow-learn-line.webp" alt="yellow-line"className="absolute top-[32%] xl:block hidden"/>
+            <img src="/assets/images/webp/yellow-learn-line.webp" alt="yellow-line"className="absolute top-[32%] xl:block hidden w-full"/>
             <div className="md:container max-w-[1322px] mx-auto">
                 <div className="flex flex-col items-center md:pb-[52px] pb-10">
                     <Heading classStyle={'sm:pb-[13px] pb-3 uppercase'} text={'Learn from us.'} />
@@ -21,8 +21,8 @@ const LearnFrom = () => {
                     </button>
                 </div>
                 <div className="relative">
-                    <img src="/assets/images/webp/learn-from-image.webp" alt="learn-from-image" className="md:block hidden" />
-                    <img className="max-md:block hidden" src="/assets/images/webp/mobile-learn-from.webp" alt="learn-from" />
+                    <img src="/assets/images/webp/learn-from-image.webp" alt="learn-from-image" className="md:block hidden w-full" />
+                    <img className="max-md:block hidden" src="/assets/images/webp/mobile-learn-from.webp w-full" alt="learn-from" />
                     <div className="bg-white sm:p-[35px_28px_31px_29px] absolute bottom-[6%] left-[2%] max-md:left-[5%] rounded-[25px] max-lg:pt-[30px] max-lg:pb-[26px] max-lg:px-[26px] max-lg:max-w-[339px]">
                         <p className="text-custom-lg font-semibold leading-none text-left text-aqua-green sm:pb-4 pb-[6px] font-MaisonNeue uppercase">
                             Guides
