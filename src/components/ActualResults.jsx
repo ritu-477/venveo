@@ -15,7 +15,7 @@ const ActualResults = () => {
                 </p>
                 <Heading text={"Actual results."} classStyle={"text-center text-white max-sm:px-4 uppercase"} />
                 <p className="sm:mt-[46px] mt-[22px] max-sm:px-4 md:mb-[81px] mb-[39px] text-custom-lg leading-5 font-maisonMono font-normal text-center">
-                    Businesses trust Venveo to power growth.
+                    Businesses trust Venveo to power grow.
                 </p>
 
                 <div className="swiper-button-prev absolute left-0 sm:left-4 md:left-8 top-[50%] transform translate-y-[170%] sm:-translate-y-[238%]">

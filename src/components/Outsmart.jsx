@@ -2,7 +2,7 @@ import React from 'react';
 
 const Outsmart = () => {
     return (
-        <div className="bg-outsmart mt-[63px] max-md:mt-12 max-sm:mt-6 bg-cover bg-no-repeat lg:bg-[100%_100%] bg-center pt-[60px] pb-20 xl:ps-[117.43px] xl:pr-[225.9px] max-sm:py-12 mb-8">
+        <div className="bg-outsmart lg:mt-[63px] max-md:mt-12 max-sm:mt-6 bg-cover bg-no-repeat lg:bg-[100%_100%] bg-center pt-[60px] pb-20 xl:ps-[117.43px] xl:pr-[225.9px] max-sm:py-12 mb-8">
             <div className="container relative max-w-[1136.68px]">
                 <img
                     src="/assets/images/svg/outsmart-arrow.svg"
@@ -22,11 +22,11 @@ const Outsmart = () => {
                             id="email"
                             type="text"
                             placeholder="Enter Your Website"
-                            className="bg-transparent outline-none font-MaisonNeue placeholder:text-black text-custom-lg font-normal leading-5"
+                            className="bg-transparent outline-none font-MaisonNeue placeholder:text-black text-black text-custom-lg font-normal leading-5"
                             aria-label="Enter your website"
                             required/>
                         <button
-                            className="text-black text-custom-lg leading-5 font-semibold text-center">
+                            className="text-black text-custom-lg font-maisonMedium leading-5 font-semibold text-center">
                             Analyze
                         </button>
                     </form>

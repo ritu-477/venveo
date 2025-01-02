@@ -54,7 +54,7 @@ const Tab = ({ activeTab }) => {
             );
         case "proprietary":
             return (
-                <div className="max-w-[1280px] bg-mobile-tab-three sm:bg-tab-three bg-cover bg-no-repeat bg-center px-[79px] pt-[75px] max-sm:py-9 max-lg:pt-[45px] lg:h-[720px] max-md:px-[32px] max-sm:px-4">
+                <div className="max-w-[1280px] bg-mobile-tab-three lg:bg-tab-three bg-cover bg-no-repeat bg-center px-[79px] pt-[75px] max-sm:py-9 max-lg:py-[45px] lg:h-[720px] max-md:px-[32px] max-sm:px-4">
                     <div className="lg:flex-row flex justify-between flex-col">
                         <div className="lg:w-5/12 w-full">
                             <Heading classStyle={'text-white uppercase'} text={'Project Radar'} />
@@ -67,7 +67,7 @@ const Tab = ({ activeTab }) => {
                             </div>
                         </div>
                         <div className="lg:w-5/12 w-full flex max-lg:justify-center max-lg:items-center">
-                            <img src="/assets/images/webp/tab-three-card.webp" alt="Tab-Three-Map" className="pointer-events-none" />
+                            <img src="/assets/images/webp/tab-three-card.webp" alt="Tab-Three-Map" className="pointer-events-none w-full" />
                         </div>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ const GrowthPartner = () => {
             <div className="container max-w-[1280px] mx-auto">
                 <Heading classStyle={'text-center uppercase'} text={'The Growth Partner'} />
                 <p className="text-3xl font-light font-maisonLight text-center sm:pb-8 lg:pb-[43px] max-sm:pb-[19px] max-sm:text-2xl">you’ve been looking for.</p>
-                <p className="text-custom-lg font-maisonMono font-normal text-center lg:pb-[105px] max-lg:pb-[56px]">Businesses trust Venveo to power growth.</p>
+                <p className="text-custom-lg font-maisonMono font-normal text-center lg:pb-[105px] max-lg:pb-[56px]">Businesses trust Venveo to power grow.</p>
                 <div className="nav-tabs">
                     <div className="flex justify-center gap-20 max-sm:gap-10 pb-14 tab-list max-sm:overflow-auto">
                         {TABS_DATA.map((tab) => (

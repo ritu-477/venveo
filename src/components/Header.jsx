@@ -74,7 +74,7 @@ const Header = () => {
                                                 e.preventDefault();
                                                 toggleDropdown(index);
                                             }}
-                                            className="flex font-medium items-center gap-1 text-custom-lg leading-5 hover:text-dark-green transition-all duration-700">
+                                            className="flex font-medium items-center gap-1 text-custom-lg leading-5 font-maisonMedium hover:text-dark-green transition-all duration-700">
                                             {item.list}
                                             <span
                                                 className={`transition-transform duration-500 mt-[7px] text-center text-custom-sm leading-custom-sm ${activeDropdown === index ? 'rotate-180' : ''}`}>▼</span></a>

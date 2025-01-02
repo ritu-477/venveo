@@ -36,7 +36,7 @@ const DigitalMarketing = () => {
             {DIGITAL_MARKETING_LIST.map((obj, index) => (
               <div
                 key={index}
-                className={`border-2 bg-white border-aqua-green w-full max-w-[503px] lg:h-[506px] px-[30px] lg:pt-[65px] lg:pb-[54px] pt-[34px] pb-[36.25px] rounded-[25px] ${!showAll && index > 0 ? "hidden sm:block" : ""}`}
+                className={`border-2 bg-white border-aqua-green w-full max-w-[503px] lg:h-[506px] px-[30px] lg:pt-[65px] lg:pb-[54px] pt-[34px] pb-[36.25px] rounded-[25px] ${!showAll && index > 0 ? "hidden lg:block" : ""}`}
               >
                 <div className="lg:flex max-lg:flex-wrap gap-6">
                   <Icon classStyle={"lg:size-[53px] size-[39.57px]"} iconName={obj.iconName} />
@@ -85,9 +85,9 @@ const DigitalMarketing = () => {
               </div>
             ))}
           </div>
-          <div className="justify-center mt-12 mb-9 max-sm:flex hidden">
+          <div className="justify-center mt-12 mb-9 max-lg:flex hidden">
             <button
-              className="font-semibold text-custom-lg leading-custom-lg"
+              className="font-semibold font-maisonMedium text-custom-lg leading-custom-lg"
               onClick={() => setShowAll(!showAll)}>
               {showAll ? "Show Less Solutions ▲" : "Show More Solutions ▼"}
             </button>

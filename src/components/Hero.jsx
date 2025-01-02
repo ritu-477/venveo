@@ -19,12 +19,12 @@ const Hero = () => {
                             id="email"
                             type="text"
                             placeholder="Enter Your Website"
-                            className="bg-transparent outline-none font-maisonLight text-custom-lg leading-5 flex-grow placeholder:text-light-gray text-light-gray"
+                            className="bg-transparent font-normal outline-none font-MaisonNeue text-custom-lg leading-5 flex-grow placeholder:text-light-gray text-white"
                         aria-label="Enter your website"
                         required
                         />
                         <button
-                            className="text-white text-custom-lg leading-5 font-semibold text-center">
+                        className="text-white text-custom-lg leading-5 font-maisonMedium font-semibold text-center">
                             Analyze
                         </button>
                     </form>

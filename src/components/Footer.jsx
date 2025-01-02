@@ -37,12 +37,12 @@ function Footer() {
             <input
               id="email"
               type="text"
-              placeholder="Enter Your Website"
+              placeholder="Enter Your Email"
               className="bg-transparent outline-none w-full placeholder:text-white text-white text-custom-lg font-normal leading-5 font-MaisonNeue"
-              aria-label="Enter your website"
+              aria-label="Enter Your Email"
               required/>
             <button
-              className="text-white text-custom-xs text-nowrap leading-5 font-semibold text-center font-maisonDemi hover:text-green transition-all duration-500">
+              className="hover:text-white text-custom-xs text-nowrap leading-5 font-semibold text-center font-maisonDemi text-green transition-all duration-500">
               Get Started
             </button>
           </form>
@@ -60,7 +60,7 @@ function Footer() {
             {logo.copyright}
           </p>
         </div>
-        <div className="lg:w-1/3 md:w-1/2 w-full flex gap-8 md:gap-14 max-sm:justify-center lg:justify-center max-md:mt-5">
+        <div className="lg:w-1/3 md:w-1/2 w-full lg:pl-9 flex gap-8 md:gap-14 max-sm:justify-center lg:justify-center max-md:mt-5">
           <div className="flex flex-col">
             <p className="font-medium text-xs leading-custom-md pb-4 lg:pb-[30px]">{visit.title}</p>
             <a target="_blank" href={visit.link} className="text-custom-md leading-5 max-w-[228px]">
@@ -96,7 +96,7 @@ function Footer() {
               </p>
             ))}
           </div>
-          <div className="flex max-sm:justify-center lg:justify-end space-x-[34px] pt-[31px]">
+          <div className="flex max-sm:justify-center items-center lg:justify-end space-x-[34px] pt-[31px]">
             {socialLinks.map((link, index) => (
               <a
                 key={index}
